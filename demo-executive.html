@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hendra Wijaya, MBA - Senior Project Manager & Business Strategist</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar gaya profesional */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8fafc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans min-h-screen selection:bg-blue-100 selection:text-blue-900 pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Ditambahkan agar calon klien mudah berpindah contoh demo portofolio
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/95 backdrop-blur-md border border-slate-200 px-4 py-3 rounded-2xl shadow-2xl flex items-center space-x-3.5 text-xs w-[90%] max-w-md md:w-auto">
+        <span class="text-slate-500 font-sans hidden sm:inline"><i class="fa-solid fa-palette text-blue-600 mr-1"></i> Gaya Desain:</span>
+        <div class="flex space-x-1 bg-slate-100 p-1 rounded-xl border border-slate-200/60 w-full sm:w-auto justify-between">
+            <a href="demo-developer.html" class="px-3 py-1.5 rounded-lg text-slate-500 hover:text-slate-800 text-center flex-1 sm:flex-initial">Developer</a>
+            <a href="demo-artisan.html" class="px-3 py-1.5 rounded-lg text-slate-500 hover:text-slate-800 text-center flex-1 sm:flex-initial">Artisan</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-executive.html" class="px-3 py-1.5 rounded-lg bg-blue-600 text-white font-bold border border-blue-500 text-center flex-1 sm:flex-initial">Executive</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-sm sm:text-base text-slate-900 tracking-tight truncate mr-2">
+                Hendra<span class="text-blue-600">Wijaya.</span>
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-semibold tracking-wide">
+                <a href="#about" class="text-slate-500 hover:text-blue-600 transition-colors">Profil</a>
+                <a href="#experience" class="text-slate-500 hover:text-blue-600 transition-colors">Riwayat</a>
+                <a href="#competency" class="text-slate-500 hover:text-blue-600 transition-colors">Kompetensi</a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="px-2.5 py-1 sm:px-4 sm:py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-750 transition-all shadow-md shadow-blue-500/10">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+            <!-- Profil Singkat Kiri -->
+            <div class="md:col-span-8 space-y-5 text-center md:text-left order-2 md:order-1">
+                <span class="inline-block text-[10px] font-bold text-blue-700 bg-blue-50 border border-blue-100 px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                    Sertifikasi Project Management Professional (PMP)®
+                </span>
+                <div class="space-y-3">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Hendra Wijaya, MBA
+                    </h1>
+                    <p class="text-xs sm:text-sm font-sans font-bold text-blue-600 uppercase tracking-widest">
+                        Senior Project Manager &amp; Business Strategist
+                    </p>
+                </div>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-body font-light">
+                    Lebih dari 8 tahun pengalaman memimpin transformasi digital dan siklus hidup proyek teknologi informasi. Berfokus pada optimalisasi operasional, efisiensi anggaran, serta menjembatani komunikasi strategis antardivisi demi tercapainya target bisnis korporasi.
+                </p>
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center justify-center md:justify-start space-x-6 pt-1 text-slate-400">
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-blue-700 transition-colors text-xl" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:hendra@email.com" class="hover:text-blue-500 transition-colors text-xl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-emerald-600 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Avatar Kanan -->
+            <div class="md:col-span-4 flex justify-center order-1 md:order-2">
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 md:w-full md:h-auto md:aspect-square max-w-[260px] rounded-2xl overflow-hidden bg-white border border-slate-100 p-1.5 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded-xl" alt="Avatar Hendra">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="space-y-8">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest block font-sans">// rekam_jejak_profesional</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Riwayat Karir</h2>
+            </div>
+
+            <!-- Timeline Blocks -->
+            <div class="max-w-4xl space-y-6">
+                <!-- Posisi 1 -->
+                <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-4">
+                    <div class="md:col-span-4 space-y-1">
+                        <span class="text-xs font-bold text-slate-400 block font-body">Januari 2024 - Sekarang</span>
+                        <h4 class="text-sm font-extrabold text-blue-600 uppercase">PT Global Tech Solutions</h4>
+                    </div>
+                    <div class="md:col-span-8 space-y-2">
+                        <h3 class="text-base font-bold text-slate-900">Senior IT Project Manager</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-body font-light">Memimpin tim lintas fungsional yang terdiri dari 15+ pengembang perangkat lunak untuk meluncurkan platform ERP korporat baru, berhasil memangkas biaya operasional klien hingga 18% dalam kurun waktu satu semester.</p>
+                    </div>
+                </div>
+
+                <!-- Posisi 2 -->
+                <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-4">
+                    <div class="md:col-span-4 space-y-1">
+                        <span class="text-xs font-bold text-slate-400 block font-body">Maret 2021 - Desember 2023</span>
+                        <h4 class="text-sm font-extrabold text-blue-600 uppercase">Aero Digital Indonesia</h4>
+                    </div>
+                    <div class="md:col-span-8 space-y-2">
+                        <h3 class="text-base font-bold text-slate-900">IT Project Specialist</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-body font-light">Mengelola jalannya siklus hidup pengembangan sistem integrasi data pembayaran, memastikan kepatuhan standar keamanan data finansial, serta berkoordinasi langsung dengan pemangku kepentingan tingkat eksekutif.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competency & Education Matrix -->
+        <section id="competency" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+            <!-- Kompetensi Utama Kiri (7 Kolom) -->
+            <div class="md:col-span-7 space-y-6">
+                <div class="space-y-1.5">
+                    <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest block font-sans">// pilar_keahlian</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Kompetensi Utama</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm space-y-2">
+                        <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-sm"><i class="fa-solid fa-list-check"></i></div>
+                        <h3 class="text-xs font-bold text-slate-900 uppercase">Project Management</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed font-body font-light">Menguasai siklus hidup manajemen proyek menggunakan kerangka Agile Scrum dan metodologi Waterfall secara disiplin.</p>
+                    </div>
+
+                    <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm space-y-2">
+                        <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-sm"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="text-xs font-bold text-slate-900 uppercase">Strategic Planning</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed font-body font-light">Menganalisis kebutuhan bisnis masa depan, memetakan risiko, serta mengoordinasikan alokasi anggaran investasi teknologi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Riwayat Akademik Kanan (5 Kolom) -->
+            <div class="md:col-span-5 space-y-6">
+                <div class="space-y-1.5">
+                    <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest block font-sans">// latar_belakang</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Pendidikan</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-lg bg-slate-550 text-slate-500 flex items-center justify-center text-xs border border-slate-100"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="space-y-0.5">
+                            <h4 class="font-extrabold text-slate-900 text-xs sm:text-sm">Master of Business Administration (MBA)</h4>
+                            <p class="text-slate-500 text-xs">Universitas Indonesia | Lulus 2021</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-lg bg-slate-550 text-slate-500 flex items-center justify-center text-xs border border-slate-100"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="space-y-0.5">
+                            <h4 class="font-extrabold text-slate-900 text-xs sm:text-sm">S1 Sistem Informasi</h4>
+                            <p class="text-slate-500 text-xs">Binus University | Lulus 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t border-slate-100 py-10 text-center text-xs text-slate-500 font-sans">
+        <p>© 2026 Hendra Wijaya. All Rights Reserved.</p>
+        <p class="mt-1">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>

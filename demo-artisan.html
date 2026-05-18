@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Kirana - UI/UX Designer & Content Creator</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar gaya hangat */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #faf8f5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e6decb;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4c8b0;
+        }
+    </style>
+</head>
+<body class="bg-[#faf8f5] text-stone-800 font-sans min-h-screen selection:bg-orange-100 selection:text-orange-900 pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Ditambahkan agar calon klien mudah berpindah contoh demo portofolio
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#faf8f5]/95 backdrop-blur-md border border-stone-200/80 px-4 py-3 rounded-2xl shadow-2xl flex items-center space-x-3.5 text-xs w-[90%] max-w-md md:w-auto">
+        <span class="text-stone-500 font-sans hidden sm:inline"><i class="fa-solid fa-palette text-orange-600 mr-1"></i> Gaya Desain:</span>
+        <div class="flex space-x-1 bg-stone-100 p-1 rounded-xl border border-stone-200/60 w-full sm:w-auto justify-between">
+            <a href="demo-developer.html" class="px-3 py-1.5 rounded-lg text-stone-500 hover:text-stone-800 text-center flex-1 sm:flex-initial">Developer</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-artisan.html" class="px-3 py-1.5 rounded-lg bg-stone-900 text-stone-50 font-bold border border-stone-800 text-center flex-1 sm:flex-initial">Artisan</a>
+            <a href="demo-executive.html" class="px-3 py-1.5 rounded-lg text-stone-500 hover:text-stone-800 text-center flex-1 sm:flex-initial">Executive</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-[#faf8f5]/85 backdrop-blur-md border-b border-stone-200/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-serif text-sm sm:text-base text-stone-900 font-bold italic tracking-tight truncate mr-2">
+                amelia.kirana
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-medium tracking-wide">
+                <a href="#about" class="text-stone-500 hover:text-stone-900 transition-colors">profil</a>
+                <a href="#gallery" class="text-stone-500 hover:text-stone-900 transition-colors">karya</a>
+                <a href="#specialty" class="text-stone-500 hover:text-stone-900 transition-colors">spesialisasi</a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="px-2.5 py-1 sm:px-4 sm:py-2 rounded-full bg-stone-900 text-white hover:bg-stone-800 transition-all">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+            <!-- Avatar Tengah-Atas di mobile, Kiri di desktop -->
+            <div class="md:col-span-4 flex justify-center order-1">
+                <div class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-full md:h-auto md:aspect-square max-w-[280px] rounded-[2.5rem] overflow-hidden bg-stone-100 border border-stone-200/80 p-1.5 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded-[2.2rem]" alt="Avatar Amelia">
+                </div>
+            </div>
+
+            <!-- Profil Singkat Kanan -->
+            <div class="md:col-span-8 space-y-5 text-center md:text-left order-2">
+                <span class="inline-block text-[10px] font-bold text-orange-700/90 uppercase tracking-widest bg-orange-50 border border-orange-100 px-3.5 py-1.5 rounded-full">
+                    Tersedia untuk Kolaborasi Kreatif
+                </span>
+                <div class="space-y-3">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-stone-900 tracking-tight leading-tight font-serif italic">
+                        Amelia Kirana
+                    </h1>
+                    <p class="text-xs sm:text-sm font-sans font-semibold text-stone-500 uppercase tracking-widest">
+                        UI/UX Designer &amp; Content Creator
+                    </p>
+                </div>
+                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-serif italic">
+                    "Menciptakan karya digital visual yang kaya estetika, ramah pengguna, serta membantu menceritakan identitas brand lewat ilustrasi modern yang unik."
+                </p>
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center justify-center md:justify-start space-x-6 pt-1 text-stone-400">
+                    <a href="https://dribbble.com" target="_blank" class="hover:text-pink-600 transition-colors text-xl" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-rose-600 transition-colors text-xl" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:amelia@email.com" class="hover:text-amber-600 transition-colors text-xl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-emerald-600 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brief Editorial Showcase (Riwayat) -->
+        <section class="border border-stone-200/60 bg-[#f5f3ec]/60 rounded-[2rem] p-6 sm:p-10 shadow-sm">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+                <div class="md:col-span-4 space-y-1">
+                    <span class="text-[9px] font-bold text-stone-400 uppercase tracking-widest font-sans block">Jejak Karya</span>
+                    <h2 class="text-xl font-bold font-serif italic text-stone-900">Perjalanan &amp; Pendidikan</h2>
+                </div>
+                <div class="md:col-span-8 space-y-6 text-xs sm:text-sm">
+                    <div class="border-b border-stone-200/60 pb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-extrabold text-stone-900 text-xs sm:text-sm">Senior UI/UX Designer</h4>
+                            <span class="text-orange-700 font-medium text-[10px] sm:text-xs">Creative Studio, Bandung (2024 - Sekarang)</span>
+                        </div>
+                        <p class="text-stone-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Mendesain alur prototipe aplikasi seluler, memimpin tim riset pengguna, serta merumuskan panduan gaya desain merek.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-extrabold text-stone-900 text-xs sm:text-sm">S1 Desain Komunikasi Visual</h4>
+                            <span class="text-orange-700 font-medium text-[10px] sm:text-xs">Institut Teknologi Bandung (Lulus 2023)</span>
+                        </div>
+                        <p class="text-stone-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Fokus pada desain media interaktif, ilustrasi vektor kontemporer, dan strategi branding digital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="space-y-8">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-orange-700/90 uppercase tracking-widest block font-sans">// galeri_karya</span>
+                <h2 class="text-2xl sm:text-3xl font-bold font-serif text-stone-900 italic">Karya Pilihan</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Karya 1 -->
+                <div class="group space-y-3">
+                    <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-stone-100 border border-stone-200/60 shadow-sm relative">
+                        <img src="https://images.unsplash.com/photo-1541462608141-2f68c48a4039?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="E-Commerce App">
+                    </div>
+                    <div class="px-1 flex justify-between items-start gap-4">
+                        <div>
+                            <h3 class="text-base font-bold text-stone-900 font-serif italic">Nusantara Craft - E-Commerce App</h3>
+                            <p class="text-xs text-stone-500 mt-1">Studi kasus UX, riset prototipe, serta perancangan antarmuka visual.</p>
+                        </div>
+                        <a href="#" class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-500 hover:bg-stone-900 hover:text-white hover:border-stone-900 transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Karya 2 -->
+                <div class="group space-y-3">
+                    <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-stone-100 border border-stone-200/60 shadow-sm relative">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Identity Branding">
+                    </div>
+                    <div class="px-1 flex justify-between items-start gap-4">
+                        <div>
+                            <h3 class="text-base font-bold text-stone-900 font-serif italic">Matahari Coffee - Branding Identity</h3>
+                            <p class="text-xs text-stone-500 mt-1">Perancangan aset vektor logo kontemporer, kemasan produk kopi, serta panduan merek.</p>
+                        </div>
+                        <a href="#" class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-500 hover:bg-stone-900 hover:text-white hover:border-stone-900 transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialty Matrix -->
+        <section id="specialty" class="space-y-6">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-orange-700/90 uppercase tracking-widest block font-sans">// spesialisasi</span>
+                <h2 class="text-2xl sm:text-3xl font-bold font-serif text-stone-900 italic">Metode &amp; Kemampuan</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-white border border-stone-200/50 p-6 rounded-3xl shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-orange-50 text-orange-700 flex items-center justify-center text-sm"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3 class="text-xs font-bold text-stone-900 uppercase tracking-wider font-sans">UI/UX Design</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Merancang wireframe, interaktivitas prototipe menggunakan Figma, serta pengujian kemudahan akses pengguna (*usability testing*).</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-white border border-stone-200/50 p-6 rounded-3xl shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-orange-50 text-orange-700 flex items-center justify-center text-sm"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="text-xs font-bold text-stone-900 uppercase tracking-wider font-sans">Aesthetic Brand Identity</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Membangun skema warna merek, tipografi, logo vektor orisinal, serta konsistensi desain identitas visual secara keseluruhan.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-white border border-stone-200/50 p-6 rounded-3xl shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-orange-50 text-orange-700 flex items-center justify-center text-sm"><i class="fa-solid fa-palette"></i></div>
+                    <h3 class="text-xs font-bold text-stone-900 uppercase tracking-wider font-sans">Vector Illustration</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Memproduksi ilustrasi vektor kustom berkualitas tinggi untuk kebutuhan aset website, media sosial, maupun media cetak fisik.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t border-stone-200/60 py-10 text-center text-xs text-stone-500 font-sans">
+        <p>© 2026 Amelia Kirana. All Rights Reserved.</p>
+        <p class="mt-1">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>
