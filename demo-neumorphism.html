@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Adrian Hartanto - AI Researcher &amp; Data Scientist</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Plus Jakarta Sans & Space Grotesk) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom sleek scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Neumorphism Shadow Utilities (Latar Belakang: #e2e8f0) */
+        .neu-flat {
+            background: #e2e8f0;
+            box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+        }
+        .neu-pressed {
+            background: #e2e8f0;
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        }
+        .neu-flat-emerald {
+            background: #10b981;
+            box-shadow: 4px 4px 8px #0d9468, -4px -4px 8px #13de9a;
+        }
+        .neu-btn-hover:hover {
+            box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-[#e2e8f0] text-slate-800 font-sans min-h-screen selection:bg-teal-500/20 selection:text-teal-900 pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#e2e8f0]/95 backdrop-blur-md border border-white/40 px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl neu-flat">
+        <span class="text-slate-600 font-display font-bold shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-teal-600 mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-[#d1d9e6]/50 p-1.5 rounded-xl border border-white/20 font-display font-bold w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Cyber</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded bg-teal-600 text-white font-bold border border-teal-500/10 text-center shrink-0 shadow-[inset_2px_2px_4px_rgba(0,0,0,0.2)]">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Swiss</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-[#e2e8f0]/85 backdrop-blur-md border-b border-white/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-display text-sm sm:text-lg text-slate-900 font-bold tracking-tight truncate mr-2">
+                🤖 adrian.<span class="text-teal-600">hartanto</span>
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-bold tracking-wide">
+                <a href="#about" class="text-slate-600 hover:text-teal-600 transition-colors">profil</a>
+                <a href="#projects" class="text-slate-600 hover:text-teal-600 transition-colors">eksplorasi_karya</a>
+                <a href="#skills" class="text-slate-600 hover:text-teal-600 transition-colors">spesialisasi</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-3.5 py-1.5 rounded-xl text-teal-700 font-bold hover:text-teal-800 transition-all neu-flat neu-btn-hover">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+            <!-- Profil Singkat Kiri -->
+            <div class="md:col-span-8 space-y-6 text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-semibold text-teal-700 neu-pressed">
+                    <span class="flex h-1.5 w-1.5 rounded-full bg-teal-500 animate-pulse"></span>
+                    <span>ONLINE // PROSES DATA LIVE</span>
+                </div>
+                <div class="space-y-3">
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight font-display">
+                        Dr. Adrian Hartanto
+                    </h1>
+                    <p class="text-xs sm:text-sm font-sans font-bold text-teal-600 uppercase tracking-[0.2em]">
+                        &gt; AI Researcher &amp; Data Scientist
+                    </p>
+                </div>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-medium font-sans">
+                    Meriset model kecerdasan buatan terapan, melakukan penambangan data (*data mining*), serta merancang visualisasi algoritme yang intuitif. Berfokus pada implementasi teknologi AI untuk optimasi sistem bisnis skala korporat.
+                </p>
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center justify-center md:justify-start space-x-5 pt-1 text-slate-400">
+                    <a href="https://linkedin.com" target="_blank" class="w-10 h-10 rounded-xl flex items-center justify-center text-xl transition-all neu-flat neu-btn-hover text-slate-600" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:adrian@email.com" class="w-10 h-10 rounded-xl flex items-center justify-center text-xl transition-all neu-flat neu-btn-hover text-slate-600" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-xl flex items-center justify-center text-xl transition-all neu-flat neu-btn-hover text-slate-600" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="w-10 h-10 rounded-xl flex items-center justify-center text-xl transition-all neu-flat neu-btn-hover text-slate-600" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Avatar Kanan -->
+            <div class="md:col-span-4 flex justify-center order-1 md:order-2">
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 md:w-full md:h-auto md:aspect-square max-w-[260px] p-3 rounded-[2.5rem] neu-flat">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded-[1.8rem] contrast-105" alt="Avatar Adrian">
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Banner / Chronology -->
+        <section class="p-6 sm:p-10 rounded-[2.5rem] neu-flat relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start relative z-10">
+                <div class="md:col-span-4 space-y-1 font-display">
+                    <span class="text-[10px] font-bold text-teal-600 uppercase tracking-[0.2em] block">KRONOLOGI</span>
+                    <h2 class="text-xl font-bold text-slate-900">Perjalanan &amp; Pendidikan</h2>
+                </div>
+                <div class="md:col-span-8 space-y-6 text-xs sm:text-sm font-medium text-slate-600">
+                    <div class="border-b border-[#cbd5e1] pb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-slate-900 text-xs sm:text-sm font-display">Lead AI Specialist</h4>
+                            <span class="text-teal-700 font-sans text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full neu-pressed">Sinergi Data Labs (2024 - Sekarang)</span>
+                        </div>
+                        <p class="text-slate-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Merancang dan melatih model jaringan saraf tiruan (neural networks) kustom untuk pengenalan visual produk manufaktur klien.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-slate-900 text-xs sm:text-sm font-display">S3 Kecerdasan Buatan Terapan</h4>
+                            <span class="text-teal-700 font-sans text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full neu-pressed">Universitas Indonesia (Lulus 2023)</span>
+                        </div>
+                        <p class="text-slate-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Melakukan riset doktoral dalam optimasi klasterisasi data multi-dimensi menggunakan metode algoritme hibrida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Curated Gallery -->
+        <section id="projects" class="space-y-8 font-display">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-teal-600 uppercase tracking-[0.2em] block">// kurasi_riset_teknis</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Kurasi Proyek</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Proyek 1 -->
+                <div class="p-5 rounded-[2.5rem] transition-all duration-300 space-y-4 neu-flat">
+                    <div class="aspect-[4/3] rounded-[1.8rem] overflow-hidden bg-slate-100 border-4 border-[#e2e8f0] shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-105" alt="Neural Networks">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-slate-900">Neurona - Visual Neural Network</h3>
+                            <p class="text-xs text-slate-500 font-sans font-light mt-1">Pengembangan dasbor interaktif berbasis web untuk merender pemetaan lapisan jaringan saraf tiruan secara real-time.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all shrink-0 text-teal-600 neu-flat neu-btn-hover"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="p-5 rounded-[2.5rem] transition-all duration-300 space-y-4 neu-flat">
+                    <div class="aspect-[4/3] rounded-[1.8rem] overflow-hidden bg-slate-100 border-4 border-[#e2e8f0] shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-105" alt="SaaS Dashboard">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-slate-900">DataFlow - Analytics Dashboard</h3>
+                            <p class="text-xs text-slate-500 font-sans font-light mt-1">Perancangan arsitektur penambangan data serta penyusunan visualisasi klasterisasi data operasional logistik.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition-all shrink-0 text-teal-600 neu-flat neu-btn-hover"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Matrix -->
+        <section id="skills" class="space-y-6 font-display">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-teal-600 uppercase tracking-[0.2em] block">// pilar_keahlian</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Spesialisasi Riset</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 font-sans">
+                <!-- Skill 1 -->
+                <div class="p-6 rounded-[2rem] space-y-4 transition-all neu-flat">
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-teal-600 text-lg neu-pressed"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide font-display">Neural Networks</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed font-sans font-medium">Merancang dan menguji model kecerdasan buatan (*convolutional neural networks*) untuk pengonsepan gambar otomatis.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="p-6 rounded-[2rem] space-y-4 transition-all neu-flat">
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-teal-600 text-lg neu-pressed"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide font-display">Data Science</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed font-sans font-medium">Menyusun integrasi algoritme statistik tingkat tinggi, pemodelan probabilitas, serta pembersihan data (*data cleansing*).</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="p-6 rounded-[2rem] space-y-4 transition-all neu-flat">
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-teal-600 text-lg neu-pressed"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide font-display">Python &amp; R Scripting</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed font-sans font-medium">Menulis skrip pemrograman Python dan R terstruktur untuk kompilasi analisis statistik kompleks di tingkat korporasi.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t border-[#cbd5e1] py-10 text-center text-xs text-slate-400 font-display">
+        <p>© 2026 Dr. Adrian Hartanto. All Rights Reserved.</p>
+        <p class="mt-1">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>

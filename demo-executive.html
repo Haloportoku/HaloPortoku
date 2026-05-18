@@ -7,7 +7,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hendra Wijaya, MBA - Senior Project Manager & Business Strategist</title>
+    <title>Hendra Wijaya, MBA - Senior Project Manager &amp; Business Strategist</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,15 +55,28 @@
 
     <!-- ==============================================================================
          NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
-         Ditambahkan agar calon klien mudah berpindah contoh demo portofolio
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
          ============================================================================== -->
-    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/95 backdrop-blur-md border border-slate-200 px-4 py-3 rounded-2xl shadow-2xl flex items-center space-x-3.5 text-xs w-[90%] max-w-md md:w-auto">
-        <span class="text-slate-500 font-sans hidden sm:inline"><i class="fa-solid fa-palette text-blue-600 mr-1"></i> Gaya Desain:</span>
-        <div class="flex space-x-1 bg-slate-100 p-1 rounded-xl border border-slate-200/60 w-full sm:w-auto justify-between">
-            <a href="demo-developer.html" class="px-3 py-1.5 rounded-lg text-slate-500 hover:text-slate-800 text-center flex-1 sm:flex-initial">Developer</a>
-            <a href="demo-artisan.html" class="px-3 py-1.5 rounded-lg text-slate-500 hover:text-slate-800 text-center flex-1 sm:flex-initial">Artisan</a>
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/95 backdrop-blur-md border border-slate-200 px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-slate-500 font-sans shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-blue-600 mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-slate-100 p-1.5 rounded-xl border border-slate-200/60 font-sans w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Artisan</a>
             <!-- Aktif pada halaman ini -->
-            <a href="demo-executive.html" class="px-3 py-1.5 rounded-lg bg-blue-600 text-white font-bold border border-blue-500 text-center flex-1 sm:flex-initial">Executive</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded bg-blue-600 text-white font-bold border border-blue-500 text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-900 text-center shrink-0">Swiss</a>
         </div>
     </div>
 
@@ -77,7 +90,7 @@
                 <a href="#about" class="text-slate-500 hover:text-blue-600 transition-colors">Profil</a>
                 <a href="#experience" class="text-slate-500 hover:text-blue-600 transition-colors">Riwayat</a>
                 <a href="#competency" class="text-slate-500 hover:text-blue-600 transition-colors">Kompetensi</a>
-                <a href="https://wa.me/6281234567890" target="_blank" class="px-2.5 py-1 sm:px-4 sm:py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-750 transition-all shadow-md shadow-blue-500/10">Kontak</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-2.5 py-1 sm:px-4 sm:py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-750 transition-all shadow-md shadow-blue-500/10">Kontak</a>
             </nav>
         </div>
     </header>
@@ -107,7 +120,7 @@
                 <div class="flex items-center justify-center md:justify-start space-x-6 pt-1 text-slate-400">
                     <a href="https://linkedin.com" target="_blank" class="hover:text-blue-700 transition-colors text-xl" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="mailto:hendra@email.com" class="hover:text-blue-500 transition-colors text-xl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-emerald-600 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="hover:text-emerald-600 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
 

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hans Schmidt - Creative Director &amp; Editorial Architect</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;850&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        swiss: ['"Space Grotesk"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar gaya asimetris Swiss (Hitam pekat, presisi tinggi) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f4f4f5;
+            border-left: 2px solid #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e11d48; /* Merah stark Bauhaus */
+            border: 2px solid #000000;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb; /* Biru stark */
+        }
+    </style>
+</head>
+<body class="bg-[#fcfbf9] text-black font-sans min-h-screen selection:bg-rose-500 selection:text-white pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-white border-[3px] border-black px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-stone-500 font-swiss font-bold shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-rose-600 mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-stone-100 p-1.5 rounded-xl border-2 border-black font-swiss font-bold w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-black text-center shrink-0">Clay</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded bg-red-600 text-white border-2 border-black font-bold text-center shrink-0 shadow-sm">Swiss</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-[#fcfbf9]/90 backdrop-blur-md border-b-[3px] border-black">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-swiss text-sm sm:text-lg text-black font-extrabold tracking-widest uppercase">
+                🇨🇭 HANS.<span class="bg-black text-white px-2 py-0.5 ml-1">SCHMIDT</span>
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-bold font-swiss uppercase tracking-wider">
+                <a href="#about" class="text-stone-500 hover:text-black transition-colors">// profil</a>
+                <a href="#projects" class="text-stone-500 hover:text-black transition-colors">// proyek</a>
+                <a href="#skills" class="text-stone-500 hover:text-black transition-colors">// spesialisasi</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-4 py-2 bg-[#e11d48] border-2 border-black text-white hover:bg-red-700 transition-all font-swiss">Hubungi</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-start pt-2">
+            <!-- Profil Singkat Kiri -->
+            <div class="md:col-span-8 space-y-8 order-2 md:order-1">
+                <div class="inline-flex items-center space-x-2 bg-black text-white border-2 border-black px-4 py-2 text-[10px] sm:text-[11px] font-swiss font-extrabold tracking-widest">
+                    <span>STATUS: READY FOR GLOBAL COMMISSION // 2026</span>
+                </div>
+                <div class="space-y-3">
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-black tracking-tighter leading-none font-swiss uppercase">
+                        HANS SCHMIDT
+                    </h1>
+                    <p class="text-xs sm:text-sm font-swiss font-bold text-red-600 uppercase tracking-[0.25em]">
+                        &gt; Creative Director &amp; Editorial Architect
+                    </p>
+                </div>
+                
+                <!-- Layout Garis Desain Khas Swiss Poster -->
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 pt-4 border-t-2 border-black">
+                    <div class="sm:col-span-4 text-xs font-swiss font-bold text-stone-400 uppercase tracking-widest">
+                        [ PENGANTAR PROYEK ]
+                    </div>
+                    <div class="sm:col-span-8 text-black text-sm leading-relaxed font-swiss font-medium">
+                        Mengkombinasikan grid geometris yang radikal, tipografi yang fungsional, dan asimetri ruang untuk menyampaikan identitas visual. Berfokus pada perancangan poster, buku fisik, katalog arsitektur, dan sistem grid web bernilai seni tinggi.
+                    </div>
+                </div>
+
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center space-x-3 pt-2 font-swiss font-bold text-xs uppercase">
+                    <a href="https://linkedin.com" target="_blank" class="px-4 py-2 border-2 border-black hover:bg-black hover:text-white transition-all">linkedin</a>
+                    <a href="mailto:hans@email.com" class="px-4 py-2 border-2 border-black hover:bg-[#e11d48] hover:text-white hover:border-[#e11d48] transition-all">email</a>
+                    <a href="https://instagram.com" target="_blank" class="px-4 py-2 border-2 border-black hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-all">instagram</a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="px-4 py-2 border-2 border-black hover:bg-[#16a34a] hover:text-white hover:border-[#16a34a] transition-all">whatsapp</a>
+                </div>
+            </div>
+            
+            <!-- Avatar Kanan (Grid Poster) -->
+            <div class="md:col-span-4 flex justify-center order-1 md:order-2">
+                <div class="relative w-full max-w-[280px] bg-yellow-400 border-[3px] border-black p-2 shadow-[8px_8px_0px_#000000]">
+                    <!-- Label Bauhaus Geometris -->
+                    <div class="absolute top-2 left-2 bg-black text-white text-[9px] font-swiss font-extrabold px-2 py-0.5 tracking-wider uppercase">BAUHAUS GRID</div>
+                    <div class="aspect-square bg-stone-100 border-[3px] border-black overflow-hidden mt-4">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale contrast-125 rounded-none" alt="Avatar Hans">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manifesto / Grid Poster Block -->
+        <section class="border-[3px] border-black bg-white p-6 sm:p-8 shadow-[8px_8px_0px_#000000] relative">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-4 space-y-2 font-swiss">
+                    <span class="text-[10px] font-extrabold text-red-600 uppercase tracking-[0.2em] block">CHRONIK //</span>
+                    <h2 class="text-2xl font-black text-black uppercase tracking-tight">Riwayat Pengalaman</h2>
+                </div>
+                <div class="md:col-span-8 space-y-6 text-xs sm:text-sm font-swiss text-xs sm:text-sm font-semibold">
+                    <div class="border-b-2 border-black/10 pb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                            <h4 class="font-extrabold text-black uppercase text-base">Principal Art Director</h4>
+                            <span class="text-white bg-black border-2 border-black px-3 py-0.5 text-[10px] tracking-wider uppercase">SCHMIDT WORKSHOP (2024 - Sekarang)</span>
+                        </div>
+                        <p class="text-stone-600 font-sans font-light mt-1.5 leading-relaxed text-xs">Mengarahkan strategi desain editorial cetak, merancang tata letak pameran seni arsitektur, serta memproduksi poster promosi merek berskala internasional.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                            <h4 class="font-extrabold text-black uppercase text-base">Magister Seni Desain Grafis</h4>
+                            <span class="text-white bg-black border-2 border-black px-3 py-0.5 text-[10px] tracking-wider uppercase">Zürcher Hochschule der Künste (Lulus 2023)</span>
+                        </div>
+                        <p class="text-stone-600 font-sans font-light mt-1.5 leading-relaxed text-xs">Fokus riset tesis pada pengolahan grid poster asimetris tradisional yang diselaraskan dengan tata letak web responsif masa depan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curated Grid Gallery -->
+        <section id="projects" class="space-y-8 font-swiss">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-red-600 uppercase tracking-[0.2em] block">// GRAPHISCHE_PROJEKTE</span>
+                <h2 class="text-3xl font-black text-black uppercase tracking-tighter">Koleksi Grid Karya</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Proyek 1 -->
+                <div class="bg-white border-[3px] border-black p-4 shadow-[6px_6px_0px_#000000] space-y-4">
+                    <div class="aspect-[4/3] border-[3px] border-black overflow-hidden bg-slate-100 relative">
+                        <span class="absolute top-2 left-2 bg-[#2563eb] text-white border-2 border-black text-[9px] font-extrabold px-2 py-0.5">POSTER ART</span>
+                        <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-110 grayscale" alt="Typographic Poster">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-black text-black uppercase">Helvetica Typographic Poster</h3>
+                            <p class="text-xs text-stone-600 font-sans font-light mt-1">Eksperimen cetak poster grafis tebal asimetris menggunakan prinsip tata letak International Typographic Style Swiss.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border-2 border-black flex items-center justify-center bg-[#facc15] hover:bg-yellow-500 text-black shrink-0 transition-all shadow-[2px_2px_0px_#000000]"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="bg-white border-[3px] border-black p-4 shadow-[6px_6px_0px_#000000] space-y-4">
+                    <div class="aspect-[4/3] border-[3px] border-black overflow-hidden bg-slate-100 relative">
+                        <span class="absolute top-2 left-2 bg-[#e11d48] text-white border-2 border-black text-[9px] font-extrabold px-2 py-0.5">EDITORIAL</span>
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-110 grayscale" alt="Book Layout">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-black text-black uppercase">Architektur - Editorial Book</h3>
+                            <p class="text-xs text-stone-600 font-sans font-light mt-1">Penyusunan tata letak buku katalog arsitektur bergaya minimalis murni dengan grid asimetris asimetris yang konsisten.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border-2 border-black flex items-center justify-center bg-[#2563eb] text-white hover:bg-blue-700 shrink-0 transition-all shadow-[2px_2px_0px_#000000]"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Matrix -->
+        <section id="skills" class="space-y-6 font-swiss">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-red-600 uppercase tracking-[0.2em] block">// MATRIX_SPEZIALISIERUNG</span>
+                <h2 class="text-3xl font-black text-black uppercase tracking-tighter">Pilar Keahlian</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 font-sans">
+                <!-- Skill 1 -->
+                <div class="bg-white border-[3px] border-black p-6 space-y-4 shadow-[4px_4px_0px_#000000]">
+                    <div class="w-12 h-12 bg-black border-2 border-black text-white flex items-center justify-center text-lg"><i class="fa-solid fa-heading"></i></div>
+                    <h3 class="text-sm font-extrabold uppercase font-swiss">Asymmetric Grid Layout</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed font-sans font-medium">Merancang tata letak asimetris yang kokoh, konsisten, menggunakan prinsip harmoni ruang kosong dan pilar tipografi.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-white border-[3px] border-black p-6 space-y-4 shadow-[4px_4px_0px_#000000]">
+                    <div class="w-12 h-12 bg-[#e11d48] border-2 border-black text-white flex items-center justify-center text-lg"><i class="fa-solid fa-book-open"></i></div>
+                    <h3 class="text-sm font-extrabold uppercase font-swiss">Editorial &amp; Print Design</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed font-sans font-medium">Menyusun konsep buku arsitektur, katalog seni, rilis komersial, poster jalanan, dan selebaran editorial berstandar internasional.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-white border-[3px] border-black p-6 space-y-4 shadow-[4px_4px_0px_#000000]">
+                    <div class="w-12 h-12 bg-[#2563eb] border-2 border-black text-white flex items-center justify-center text-lg"><i class="fa-solid fa-fingerprint"></i></div>
+                    <h3 class="text-sm font-extrabold uppercase font-swiss">Corporate Swiss Branding</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed font-sans font-medium">Merumuskan panduan identitas merek dengan pendekatan minimalis murni, bersih, berintegritas tinggi, dan fungsional.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t-[3px] border-black py-10 text-center text-xs font-swiss font-bold uppercase tracking-wider">
+        <p>© 2026 Hans Schmidt. All Rights Reserved.</p>
+        <p class="mt-1 text-stone-400 font-sans font-light normal-case">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milo Ardiansyah - 3D Character Artist &amp; Playful Illustrator</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        playful: ['"Fredoka"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar gaya pastel melingkar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fff8f8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ffd6e0;
+            border-radius: 4px;
+            border: 2px solid #fff8f8;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffb3c6;
+        }
+
+        /* Claymorphism Shadow Utilities */
+        .clay-card {
+            background: #ffffff;
+            border: 4px solid #3d2929;
+            box-shadow: 0px 8px 0px #3d2929;
+            border-radius: 28px;
+            transition: all 0.2s ease;
+        }
+        .clay-card:hover {
+            transform: translateY(2px);
+            box-shadow: 0px 6px 0px #3d2929;
+        }
+        .clay-btn {
+            background: #ffd6e0;
+            border: 3px solid #3d2929;
+            box-shadow: 0px 4px 0px #3d2929;
+            border-radius: 20px;
+            transition: all 0.15s ease;
+        }
+        .clay-btn:hover {
+            transform: translateY(2px);
+            box-shadow: 0px 2px 0px #3d2929;
+        }
+        .clay-btn:active {
+            transform: translateY(4px);
+            box-shadow: 0px 0px 0px #3d2929;
+        }
+    </style>
+</head>
+<body class="bg-[#fff8f8] text-[#3d2929] font-sans min-h-screen selection:bg-[#ffd6e0] pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#fff] border-4 border-[#3d2929] px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-stone-500 font-playful font-bold shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-[#ffb3c6] mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-stone-100 p-1.5 rounded-xl border-2 border-[#3d2929]/10 font-playful font-bold w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Nordic</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded bg-[#ffd6e0] text-[#3d2929] border-2 border-[#3d2929] font-bold text-center shrink-0 shadow-sm">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-[#3d2929] text-center shrink-0">Swiss</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-[#fff8f8]/90 backdrop-blur-md border-b-4 border-[#3d2929]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-playful text-sm sm:text-lg text-[#3d2929] font-bold tracking-tight truncate mr-2">
+                🎈 milo.<span class="text-[#ff7597]">studio</span>
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-bold font-playful tracking-wide">
+                <a href="#about" class="text-stone-500 hover:text-[#ff7597] transition-colors">profil_milo</a>
+                <a href="#curation" class="text-stone-500 hover:text-[#ff7597] transition-colors">mainan_karya</a>
+                <a href="#skills" class="text-stone-500 hover:text-[#ff7597] transition-colors">ilmu_sakti</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-3.5 py-2 rounded-xl bg-[#caffbf] border-2 border-[#3d2929] text-black hover:bg-[#b5f9a6] transition-all shadow-[2px_2px_0px_#3d2929]">Sapa Milo!</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+            <!-- Profil Singkat Kiri -->
+            <div class="md:col-span-8 space-y-6 text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center space-x-2 bg-[#ffb3c6]/20 border-2 border-[#3d2929] px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-playful font-bold text-[#ff527b] shadow-[1px_2px_0px_#3d2929]">
+                    <span class="flex h-1.5 w-1.5 rounded-full bg-[#ff527b] animate-ping"></span>
+                    <span>ONLINE // SELALU INGIN BERMAIN PROYEK</span>
+                </div>
+                <div class="space-y-3">
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#3d2929] tracking-tight leading-tight font-playful">
+                        Milo Ardiansyah
+                    </h1>
+                    <p class="text-xs sm:text-sm font-sans font-bold text-[#ff7597] uppercase tracking-[0.2em]">
+                        &gt; 3D Character Artist &amp; Playful Illustrator
+                    </p>
+                </div>
+                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-medium font-sans">
+                    Mengubah ide mentah menjadi model karakter 3D bergaya clay yang menggemaskan, ramah mata, dan penuh warna ceria. Sangat menyukai perakitan ilustrasi visual mainan anak-anak, aset antarmuka game kasual, serta dekorasi desain Web3 yang unik.
+                </p>
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center justify-center md:justify-start space-x-4 pt-1">
+                    <a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-[#ffd6e0] border-2 border-[#3d2929] shadow-[2px_2px_0px_#3d2929] rounded-xl flex items-center justify-center text-lg hover:translate-y-0.5 transition-all text-[#3d2929]" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:milo@email.com" class="w-10 h-10 bg-[#caffbf] border-2 border-[#3d2929] shadow-[2px_2px_0px_#3d2929] rounded-xl flex items-center justify-center text-lg hover:translate-y-0.5 transition-all text-[#3d2929]" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-[#9bf6ff] border-2 border-[#3d2929] shadow-[2px_2px_0px_#3d2929] rounded-xl flex items-center justify-center text-lg hover:translate-y-0.5 transition-all text-[#3d2929]" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="w-10 h-10 bg-[#ffcaa6] border-2 border-[#3d2929] shadow-[2px_2px_0px_#3d2929] rounded-xl flex items-center justify-center text-lg hover:translate-y-0.5 transition-all text-[#3d2929]" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Avatar Kanan -->
+            <div class="md:col-span-4 flex justify-center order-1 md:order-2">
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 md:w-full md:h-auto md:aspect-square max-w-[260px] p-2 bg-white border-4 border-[#3d2929] shadow-[4px_6px_0px_#3d2929] rounded-[2rem]">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded-[1.6rem]" alt="Avatar Milo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Chronology / Manifesto Section -->
+        <section class="clay-card p-6 sm:p-10 relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+                <div class="md:col-span-4 space-y-1 font-playful">
+                    <span class="text-[9px] font-sans font-bold text-stone-400 uppercase tracking-[0.2em] block">// JEJAK_KATA_MILO</span>
+                    <h2 class="text-xl font-bold text-stone-900">Kronologi Kreatif</h2>
+                </div>
+                <div class="md:col-span-8 space-y-6 text-xs sm:text-sm font-sans font-medium text-stone-600">
+                    <div class="border-b-2 border-stone-100 pb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-stone-900 text-xs sm:text-sm font-playful">Senior 3D Artist // Illustrator Lead</h4>
+                            <span class="text-[#ff527b] bg-[#ffd6e0] px-2.5 py-1 rounded-xl border-2 border-[#3d2929] text-[9px] sm:text-xs font-playful shadow-[1px_2px_0px_#3d2929]">Studio Boneka Ceria, Jogja (2024 - Sekarang)</span>
+                        </div>
+                        <p class="text-stone-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Mendesain konsep mainan vinyl komersial, membuat tekstur model karakter 3D di Blender, serta merancang aset ilustrasi antarmuka seluler.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-stone-900 text-xs sm:text-sm font-playful">S1 Desain Komunikasi Visual</h4>
+                            <span class="text-[#ff527b] bg-[#ffd6e0] px-2.5 py-1 rounded-xl border-2 border-[#3d2929] text-[9px] sm:text-xs font-playful shadow-[1px_2px_0px_#3d2929]">ISI Yogyakarta (Lulus 2023)</span>
+                        </div>
+                        <p class="text-stone-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Fokus pada seni komik anak interaktif, studi bentuk dasar karakter maskot, serta pengolahan animasi 3D sederhana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Curated Gallery -->
+        <section id="curation" class="space-y-8 font-sans">
+            <div class="space-y-1.5 text-center md:text-left font-playful">
+                <span class="text-[10px] font-bold text-[#ff7597] uppercase tracking-[0.2em] block font-sans">// galeri_karya_lucu</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#3d2929] tracking-tight">Koleksi Mainan Visual</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Proyek 1 -->
+                <div class="clay-card p-5 space-y-4 bg-white">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 border-4 border-[#3d2929]">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-105" alt="3D Model">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-[#3d2929] font-playful">Pet Toy - 3D Vinyl Toy Concept</h3>
+                            <p class="text-xs text-stone-500 font-sans font-light mt-1">Konsep mainan karakter kucing imut yang dirakit secara 3D menggunakan tekstur *clay* lembut untuk kebutuhan produksi mainan fisik.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border-2 border-[#3d2929] text-stone-900 rounded-xl flex items-center justify-center bg-[#9bf6ff] shadow-[2px_2px_0px_#3d2929] hover:translate-y-0.5 transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="clay-card p-5 space-y-4 bg-white">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-stone-100 border-4 border-[#3d2929]">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-105" alt="Illustration Art">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-[#3d2929] font-playful">FunLand - Game Asset Pack</h3>
+                            <p class="text-xs text-stone-500 font-sans font-light mt-1">Satu paket lengkap aset ilustrasi tombol, latar belakang bertema awan ceria, serta karakter musuh bertekstur lilin lucu.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border-2 border-[#3d2929] text-stone-900 rounded-xl flex items-center justify-center bg-[#caffbf] shadow-[2px_2px_0px_#3d2929] hover:translate-y-0.5 transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Matrix -->
+        <section id="skills" class="space-y-6">
+            <div class="space-y-1.5 text-center md:text-left font-playful">
+                <span class="text-[10px] font-bold text-stone-400 uppercase tracking-[0.2em] block font-sans">// jurus_andalan</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#3d2929]">Sertifikat &amp; Ilmu</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 font-sans">
+                <!-- Skill 1 -->
+                <div class="clay-card p-6 bg-white space-y-4 text-center sm:text-left">
+                    <div class="w-12 h-12 bg-[#ffcaa6] border-2 border-[#3d2929] shadow-[2px_2px_0px_#3d2929] text-[#3d2929] rounded-2xl flex items-center justify-center text-lg mx-auto sm:mx-0"><i class="fa-solid fa-cube"></i></div>
+                    <h3 class="text-sm font-bold text-[#3d2929] uppercase tracking-wide font-playful">3D Clay Modeling</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">Merancang bentuk objek 3D Blender bertekstur lembut (*clay shaders*), simulasi pencahayaan kartun, &amp; anatomi boneka.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="clay-card p-6 bg-white space-y-4 text-center sm:text-left">
+                    <div class="w-12 h-12 bg-[#9bf6ff] border-2 border-[#3d2929] shadow-[2px_2px_0px_#3d2929] text-[#3d2929] rounded-2xl flex items-center justify-center text-lg mx-auto sm:mx-0"><i class="fa-solid fa-paintbrush"></i></div>
+                    <h3 class="text-sm font-bold text-[#3d2929] uppercase tracking-wide font-playful">Playful Illustration</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">Membuat karakter ilustrasi penuh keceriaan, logo maskot imut, pilar warna-warni pastel kontras tinggi untuk buku anak.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="clay-card p-6 bg-white space-y-4 text-center sm:text-left">
+                    <div class="w-12 h-12 bg-[#caffbf] border-2 border-[#3d2929] shadow-[2px_2px_0px_#3d2929] text-[#3d2929] rounded-2xl flex items-center justify-center text-lg mx-auto sm:mx-0"><i class="fa-solid fa-gamepad"></i></div>
+                    <h3 class="text-sm font-bold text-[#3d2929] uppercase tracking-wide font-playful">Game UI Asset</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">Mendesain antarmuka menu game kasual, skema ikon tombol taktil melengkung tebal, dan peta dunia 2.5D sederhana.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t-4 border-[#3d2929] py-10 text-center text-xs text-stone-500 font-playful font-bold">
+        <p>© 2026 Milo Studio. All Rights Reserved.</p>
+        <p class="mt-1">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Clarissa, M.A. - Brand Storyteller &amp; Editorial Writer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar gaya mewah hijau zamrud */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #061e14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #204a37;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #cca762;
+        }
+    </style>
+</head>
+<body class="bg-[#061e14] text-[#ece4d3] font-sans min-h-screen selection:bg-[#cca762]/30 selection:text-white pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#061e14]/95 backdrop-blur-md border border-[#cca762]/30 px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-[#cca762] font-sans shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-[#cca762] mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-[#092d1f] p-1.5 rounded-xl border border-[#cca762]/10 font-sans w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Executive</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded bg-[#cca762] text-[#061e14] font-bold border border-[#cca762]/20 text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-[#ece4d3]/60 hover:text-white text-center shrink-0">Swiss</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-[#061e14]/85 backdrop-blur-md border-b border-[#cca762]/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-serif text-sm sm:text-base text-white font-bold tracking-tight truncate mr-2">
+                sarah.<span class="text-[#cca762]">clarissa</span>
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-semibold tracking-wide">
+                <a href="#about" class="text-[#ece4d3]/70 hover:text-white transition-colors">profil</a>
+                <a href="#curation" class="text-[#ece4d3]/70 hover:text-white transition-colors">kurasi</a>
+                <a href="#expertise" class="text-[#ece4d3]/70 hover:text-white transition-colors">keahlian</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-[#cca762] text-[#061e14] hover:bg-[#b08b47] transition-all">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+            <!-- Profil Singkat Kiri -->
+            <div class="md:col-span-8 space-y-6 text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center space-x-2 bg-[#092d1f] border border-[#cca762]/30 px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-sans text-[#cca762]">
+                    <span class="flex h-1.5 w-1.5 rounded-full bg-[#cca762] animate-pulse"></span>
+                    <span>Tersedia untuk Editorial &amp; Konsultasi Brand</span>
+                </div>
+                <div class="space-y-3">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-normal text-white tracking-tight leading-tight font-serif">
+                        Sarah Clarissa, M.A.
+                    </h1>
+                    <p class="text-xs sm:text-sm font-sans font-bold text-[#cca762] uppercase tracking-[0.2em]">
+                        &gt; Brand Storyteller &amp; Editorial Writer
+                    </p>
+                </div>
+                <p class="text-[#ece4d3]/80 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-serif italic">
+                    "Merangkai narasi tulisan berkelas tinggi yang menghidupkan jiwa identitas sebuah brand. Berpengalaman menulis esai, kopi pemasaran mewah, dan bekerja sama dengan jenama mode global."
+                </p>
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center justify-center md:justify-start space-x-5 pt-1 text-[#cca762]">
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-white transition-colors text-xl" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:sarah@email.com" class="hover:text-white transition-colors text-xl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-white transition-colors text-xl" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="hover:text-white transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Avatar Kanan -->
+            <div class="md:col-span-4 flex justify-center order-1 md:order-2">
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 md:w-full md:h-auto md:aspect-square max-w-[260px] rounded-3xl overflow-hidden bg-[#092d1f] border border-[#cca762]/30 p-1.5 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded-[1.2rem] grayscale contrast-125" alt="Avatar Sarah">
+                </div>
+            </div>
+        </section>
+
+        <!-- Editorial Showcase Section -->
+        <section class="border border-[#cca762]/30 bg-[#092d1f]/30 rounded-[2rem] p-6 sm:p-10 shadow-sm relative overflow-hidden">
+            <div class="absolute -right-20 -bottom-20 w-60 h-60 bg-[#cca762]/5 rounded-full blur-3xl"></div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start relative z-10">
+                <div class="md:col-span-4 space-y-1">
+                    <span class="text-[9px] font-bold text-[#cca762] uppercase tracking-[0.2em] font-sans block">KURASI KATA</span>
+                    <h2 class="text-xl font-bold font-serif text-white">Narasi &amp; Pendidikan</h2>
+                </div>
+                <div class="md:col-span-8 space-y-6 text-xs sm:text-sm">
+                    <div class="border-b border-[#cca762]/10 pb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-white text-xs sm:text-sm font-serif">Senior Copywriter &amp; Editor</h4>
+                            <span class="text-[#cca762] font-semibold text-[10px] sm:text-xs">Lux Narrative House, Paris-Jakarta (2024 - Sekarang)</span>
+                        </div>
+                        <p class="text-[#ece4d3]/70 font-sans font-light mt-1.5 leading-relaxed text-xs">Menulis rilis pers produk wewangian mewah, berkolaborasi dengan kurator busana, serta merumuskan gaya editorial media online premium.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-white text-xs sm:text-sm font-serif">S2 Kajian Media &amp; Jurnalisme</h4>
+                            <span class="text-[#cca762] font-semibold text-[10px] sm:text-xs font-sans">Universitas Indonesia (Lulus 2023)</span>
+                        </div>
+                        <p class="text-[#ece4d3]/70 font-sans font-light mt-1.5 leading-relaxed text-xs">Fokus tesis pada representasi kelas sosial dan semiotika visual pada kampanye produk gaya hidup mewah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Curated Gallery -->
+        <section id="curation" class="space-y-8">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-[#cca762] uppercase tracking-[0.2em] block font-sans">// kurasi_karya</span>
+                <h2 class="text-2xl sm:text-3xl font-bold font-serif text-white">Eksplorasi Proyek</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Proyek 1 -->
+                <div class="group space-y-3">
+                    <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-[#092d1f]/40 border border-[#cca762]/20 shadow-sm relative p-1">
+                        <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover rounded-[1.4rem] grayscale hover:grayscale-0 transition-transform duration-500" alt="E-Commerce App">
+                    </div>
+                    <div class="px-1 flex justify-between items-start gap-4">
+                        <div>
+                            <h3 class="text-base font-bold text-white font-serif italic">Maison de Fleurs - Copywriting</h3>
+                            <p class="text-xs text-[#ece4d3]/60 mt-1">Penyusunan katalog merek, teks kampanye wewangian premium, serta naskah video pendek.</p>
+                        </div>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#cca762]/30 flex items-center justify-center text-[#cca762] hover:bg-[#cca762] hover:text-[#061e14] hover:border-[#cca762] transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="group space-y-3">
+                    <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-[#092d1f]/40 border border-[#cca762]/20 shadow-sm relative p-1">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover rounded-[1.4rem] grayscale hover:grayscale-0 transition-transform duration-500" alt="Identity Branding">
+                    </div>
+                    <div class="px-1 flex justify-between items-start gap-4">
+                        <div>
+                            <h3 class="text-base font-bold text-white font-serif italic">Koran Jurnal - Antologi Esai</h3>
+                            <p class="text-xs text-[#ece4d3]/60 mt-1">Kumpulan tulisan esai kurasi seni rupa kontemporer Jakarta yang diterbitkan secara berkala di koran media nasional.</p>
+                        </div>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#cca762]/30 flex items-center justify-center text-[#cca762] hover:bg-[#cca762] hover:text-[#061e14] hover:border-[#cca762] transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Matrix -->
+        <section id="expertise" class="space-y-6">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-[#cca762] uppercase tracking-[0.2em] block font-sans">// spesialisasi</span>
+                <h2 class="text-2xl sm:text-3xl font-bold font-serif text-white">Pilar Kemampuan</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-[#092d1f]/20 border border-[#cca762]/20 p-6 rounded-3xl shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-[#092d1f] text-[#cca762] border border-[#cca762]/30 flex items-center justify-center text-sm"><i class="fa-solid fa-signature"></i></div>
+                    <h3 class="text-xs font-bold text-white uppercase tracking-wider font-sans">Creative Writing</h3>
+                    <p class="text-xs text-[#ece4d3]/70 leading-relaxed font-sans">Menulis draf esai seni, narasi video komersial, kopian naratif merek, serta profil eksklusif tokoh/seniman profesional.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-[#092d1f]/20 border border-[#cca762]/20 p-6 rounded-3xl shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-[#092d1f] text-[#cca762] border border-[#cca762]/30 flex items-center justify-center text-sm"><i class="fa-solid fa-newspaper"></i></div>
+                    <h3 class="text-xs font-bold text-white uppercase tracking-wider font-sans">Content Strategy</h3>
+                    <p class="text-xs text-[#ece4d3]/70 leading-relaxed font-sans">Menyusun arahan gaya editorial media sosial, perencanaan tema penulisan tahunan, serta menyelaraskan visi tulisan dan estetika visual.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-[#092d1f]/20 border border-[#cca762]/20 p-6 rounded-3xl shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-[#092d1f] text-[#cca762] border border-[#cca762]/30 flex items-center justify-center text-sm"><i class="fa-solid fa-gem"></i></div>
+                    <h3 class="text-xs font-bold text-white uppercase tracking-wider font-sans">Lux Branding</h3>
+                    <p class="text-xs text-[#ece4d3]/70 leading-relaxed font-sans">Merumuskan strategi semiotika kata khusus untuk produk kelas atas demi membangun prestise dan ikatan emosional premium.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t border-[#cca762]/20 py-10 text-center text-xs text-[#ece4d3]/50 font-sans">
+        <p>© 2026 Sarah Clarissa. All Rights Reserved.</p>
+        <p class="mt-1">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>

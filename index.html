@@ -2,7 +2,7 @@
 <html lang="id" class="scroll-smooth">
 <head>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link class="rounded-full" rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -21,15 +21,14 @@
 
     <!-- Open Graph / Facebook / WhatsApp Preview -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://haloportoku.github.io/HaloPortoku/"> <!-- Ganti dengan link github pages Anda nanti -->
+    <meta property="og:url" content="https://haloportoku.github.io/HaloPortoku/"> 
     <meta property="og:title" content="HaloPortoku - Website CV & Portofolio Profesional">
     <meta property="og:description" content="Buat website portofolio interaktif, super cepat, responsif, dan bebas biaya server hingga 5 tahun. Coba demo instan sekarang!">
     
-    <!-- Gambar rasio 1.91:1 (~1200x630px) untuk tampilan preview besar yang menawan -->
-    <!-- <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"> -->
+    <!-- Gambar Preview WhatsApp -->
+    <meta property="og:image" content="https://haloportoku.github.io/HaloPortoku/promo/promo.png">
     <meta name="twitter:image" content="https://haloportoku.github.io/HaloPortoku/promo/promo.png">
 
- 
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -37,13 +36,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HaloPortoku - Website CV & Portofolio Profesional">
     <meta name="twitter:description" content="Buat website portofolio interaktif, super cepat, responsif, dan bebas biaya server hingga 5 tahun.">
-    <meta name="twitter:image" content="https://haloportoku.github.io/HaloPortoku/promo/promo.png">
-
-    <!-- ==============================================================================
-         FAVICON: SVG Inline Data URI
-         ============================================================================== -->
-    <!-- <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284c7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12c0 4.4 3.6 8 8 8s8-3.6 8-8'/%3E%3Cpath d='M9 11l2 2 4-4' stroke='%23f59e0b'/%3E%3Ccircle cx='8' cy='7' r='1.5' fill='%230284c7'/%3E%3Ccircle cx='16' cy='7' r='1.5' fill='%230284c7'/%3E%3C/svg%3E"> -->
-
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -86,6 +78,7 @@
         /* Smooth Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
+            height: 8px;
         }
         ::-webkit-scrollbar-track {
             background: #f1f5f9;
@@ -134,21 +127,60 @@
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <!-- Dropdown Menu untuk Demo Instan (Opsi Solusi 3) -->
+                    <!-- Dropdown Menu untuk Demo Instan (SISTEM GRID 2-KOLOM UNTUK 12 TEMPLATE) -->
                     <div class="relative group inline-block text-left">
-                        <button class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors flex items-center gap-1.5 py-5 outline-none">
+                        <button class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors flex items-center gap-1.5 py-5 outline-none font-sans">
                             Demo Instan <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
                         </button>
-                        <!-- Menu Dropdown Cantik -->
-                        <div class="absolute left-0 mt-0 w-52 rounded-2xl bg-white border border-slate-100 shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto transition-all duration-200 z-50 p-2 space-y-1">
-                            <a href="demo-developer.html" target="_blank" class="block px-4 py-2.5 text-xs font-bold text-slate-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-all">
-                                <i class="fa-solid fa-laptop-code mr-2 text-indigo-500"></i> Gaya Developer
+                        <!-- Menu Dropdown Grid Megah -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 mt-0 w-[420px] rounded-2xl bg-white border border-slate-100 shadow-2xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto transition-all duration-200 z-50 p-4 grid grid-cols-2 gap-2">
+                            <a href="demo-developer.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-indigo-50 text-indigo-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-laptop-code"></i></span>
+                                <div><p class="font-extrabold">1. Developer</p><p class="text-[9px] text-slate-400 font-normal">Minimalist Tech Dark</p></div>
                             </a>
-                            <a href="demo-artisan.html" target="_blank" class="block px-4 py-2.5 text-xs font-bold text-slate-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-all">
-                                <i class="fa-solid fa-wand-magic-sparkles mr-2 text-amber-500"></i> Gaya Artisan
+                            <a href="demo-artisan.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-amber-50 text-amber-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                                <div><p class="font-extrabold">2. Artisan</p><p class="text-[9px] text-slate-400 font-normal">Aesthetic Warm Editorial</p></div>
                             </a>
-                            <a href="demo-executive.html" target="_blank" class="block px-4 py-2.5 text-xs font-bold text-slate-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-all">
-                                <i class="fa-solid fa-briefcase mr-2 text-sky-500"></i> Gaya Executive
+                            <a href="demo-executive.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-sky-50 text-sky-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-briefcase"></i></span>
+                                <div><p class="font-extrabold">3. Executive</p><p class="text-[9px] text-slate-400 font-normal">Corporate LinkedIn Blue</p></div>
+                            </a>
+                            <a href="demo-elegant.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-emerald-50 text-emerald-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-crown"></i></span>
+                                <div><p class="font-extrabold">4. Elegant</p><p class="text-[9px] text-slate-400 font-normal">Emerald Gold Luxury</p></div>
+                            </a>
+                            <a href="demo-retro.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-rose-50 text-rose-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-cubes"></i></span>
+                                <div><p class="font-extrabold">5. Retro</p><p class="text-[9px] text-slate-400 font-normal">Neo-Brutalisme Pastel</p></div>
+                            </a>
+                            <a href="demo-neomint.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-teal-50 text-teal-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-seedling"></i></span>
+                                <div><p class="font-extrabold">6. Mint</p><p class="text-[9px] text-slate-400 font-normal">Sleek Mint Glassmorphism</p></div>
+                            </a>
+                            <a href="demo-cyberpunk.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-fuchsia-50 text-fuchsia-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-bolt"></i></span>
+                                <div><p class="font-extrabold">7. Cyberpunk</p><p class="text-[9px] text-slate-400 font-normal">Neon Sci-Fi Dark</p></div>
+                            </a>
+                            <a href="demo-neumorphism.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-slate-100 text-slate-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-circle-nodes"></i></span>
+                                <div><p class="font-extrabold">8. Soft UI</p><p class="text-[9px] text-slate-400 font-normal">Tactile Neumorphism</p></div>
+                            </a>
+                            <a href="demo-aurora.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-violet-50 text-violet-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-wand-magic"></i></span>
+                                <div><p class="font-extrabold">9. Aurora</p><p class="text-[9px] text-slate-400 font-normal">Dark Aurora Glow</p></div>
+                            </a>
+                            <a href="demo-nordic.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-orange-50 text-orange-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-house"></i></span>
+                                <div><p class="font-extrabold">10. Nordic</p><p class="text-[9px] text-slate-400 font-normal">Minimalist Scandinavian</p></div>
+                            </a>
+                            <a href="demo-clay.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-pink-50 text-pink-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-face-smile"></i></span>
+                                <div><p class="font-extrabold">11. Clay</p><p class="text-[9px] text-slate-400 font-normal">Playful Claymorphism</p></div>
+                            </a>
+                            <a href="demo-swiss.html" target="_blank" class="flex items-center gap-2.5 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-brand-600 rounded-xl transition-all">
+                                <span class="bg-red-50 text-red-600 w-7 h-7 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-heading"></i></span>
+                                <div><p class="font-extrabold">12. Swiss</p><p class="text-[9px] text-slate-400 font-normal">High-Contrast Grid</p></div>
                             </a>
                         </div>
                     </div>
@@ -157,7 +189,7 @@
                     <a href="#pricing" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Paket &amp; Harga</a>
                 </div>
                 <div>
-                    <a href="https://wa.me/6282387385055?text=Halo%20HaloPortoku,%20saya%20tertarik%20ingin%20bertanya%20mengenai%20pembuatan%20website%20CV!" target="_blank" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-500/10 hover:shadow-brand-500/20 active:scale-95 transition-all duration-150">
+                    <a href="https://wa.me/6282387385055?text=Halo%20HaloPortoku,%20saya%20tertarik%20ingin%20bertanya%20mengenai%20pembuatan%20website%20CV!" target="_blank" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-500/10 hover:shadow-brand-500/20 active:scale-95 transition-all duration-150 font-sans">
                         <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Tanya Gratis
                     </a>
                 </div>
@@ -185,10 +217,10 @@
                         Dapatkan keunggulan dibanding pelamar lain. Rekruter akan lebih mudah mengenali potensi terbaik Anda melalui website portofolio interaktif yang super cepat, responsif, serta bebas biaya server hingga 5 tahun ke depan.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#demo" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-xl shadow-brand-500/20 active:scale-95 transition-all duration-150">
+                        <a href="#demo" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-xl shadow-brand-500/20 active:scale-95 transition-all duration-150 font-sans">
                             Coba Buat Demo <i class="fa-solid fa-arrow-right ml-2"></i>
                         </a>
-                        <a href="#pricing" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 active:scale-95 transition-all duration-150">
+                        <a href="#pricing" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 active:scale-95 transition-all duration-150 font-sans">
                             Lihat Paket &amp; Harga
                         </a>
                     </div>
@@ -279,7 +311,7 @@
                 <!-- KOLOM KIRI: FORMULIR KONTROL & SANDBOX -->
                 <div class="lg:col-span-5 bg-white rounded-3xl p-6 shadow-xl border border-slate-200/50 space-y-6">
                     
-                    <!-- 1. Pilihan Template -->
+                    <!-- 1. Pilihan Template (GRID PENUH UNTUK SELURUH 12 TEMPLATE DENGAN SCROLLBAR) -->
                     <div>
                         <div class="flex justify-between items-center mb-3">
                             <h3 class="text-sm font-black text-slate-400 uppercase tracking-wider flex items-center">
@@ -291,21 +323,66 @@
                                 <i class="fa-solid fa-wand-magic-sparkles"></i> Data Otomatis
                             </button>
                         </div>
-                        <div class="grid grid-cols-3 gap-2">
+                        <div class="grid grid-cols-3 gap-1.5 max-h-56 overflow-y-auto p-1 border border-slate-100 rounded-xl bg-slate-50/50 custom-scrollbar font-sans">
                             <!-- Tech Button -->
-                            <button onclick="changeTemplate('tech')" id="btn-tmpl-tech" class="template-btn p-3 rounded-2xl border text-center transition-all duration-200 bg-brand-50 border-brand-500 text-brand-700 ring-2 ring-brand-500/20">
-                                <i class="fa-solid fa-laptop-code text-lg block mb-1"></i>
-                                <span class="text-[11px] font-bold block">Developer</span>
+                            <button onclick="changeTemplate('tech')" id="btn-tmpl-tech" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 bg-brand-50 border-brand-500 text-brand-700 ring-2 ring-brand-500/20">
+                                <i class="fa-solid fa-laptop-code text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Developer</span>
                             </button>
                             <!-- Creative Button -->
-                            <button onclick="changeTemplate('creative')" id="btn-tmpl-creative" class="template-btn p-3 rounded-2xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
-                                <i class="fa-solid fa-wand-magic-sparkles text-lg block mb-1"></i>
-                                <span class="text-[11px] font-bold block">Artisan</span>
+                            <button onclick="changeTemplate('creative')" id="btn-tmpl-creative" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-wand-magic-sparkles text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Artisan</span>
                             </button>
                             <!-- Corporate Button -->
-                            <button onclick="changeTemplate('corporate')" id="btn-tmpl-corporate" class="template-btn p-3 rounded-2xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
-                                <i class="fa-solid fa-briefcase text-lg block mb-1"></i>
-                                <span class="text-[11px] font-bold block">Executive</span>
+                            <button onclick="changeTemplate('corporate')" id="btn-tmpl-corporate" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-briefcase text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Executive</span>
+                            </button>
+                            <!-- Elegant Button -->
+                            <button onclick="changeTemplate('elegant')" id="btn-tmpl-elegant" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-crown text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Elegant</span>
+                            </button>
+                            <!-- Retro Button -->
+                            <button onclick="changeTemplate('retro')" id="btn-tmpl-retro" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-cubes text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Retro</span>
+                            </button>
+                            <!-- Mint Button -->
+                            <button onclick="changeTemplate('neomint')" id="btn-tmpl-neomint" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-seedling text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Mint</span>
+                            </button>
+                            <!-- Cyber Button -->
+                            <button onclick="changeTemplate('cyber')" id="btn-tmpl-cyber" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-bolt text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Cyber</span>
+                            </button>
+                            <!-- Soft Button -->
+                            <button onclick="changeTemplate('soft')" id="btn-tmpl-soft" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-circle-nodes text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Soft UI</span>
+                            </button>
+                            <!-- Aurora Button -->
+                            <button onclick="changeTemplate('aurora')" id="btn-tmpl-aurora" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-wand-magic text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Aurora</span>
+                            </button>
+                            <!-- Nordic Button -->
+                            <button onclick="changeTemplate('nordic')" id="btn-tmpl-nordic" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-house text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Nordic</span>
+                            </button>
+                            <!-- Clay Button -->
+                            <button onclick="changeTemplate('clay')" id="btn-tmpl-clay" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-face-smile text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Clay</span>
+                            </button>
+                            <!-- Swiss Button -->
+                            <button onclick="changeTemplate('swiss')" id="btn-tmpl-swiss" class="template-btn p-2 rounded-xl border text-center transition-all duration-200 border-slate-200 text-slate-600 hover:bg-slate-50">
+                                <i class="fa-solid fa-heading text-sm block mb-1"></i>
+                                <span class="text-[10px] font-bold block">Swiss</span>
                             </button>
                         </div>
                     </div>
@@ -349,7 +426,7 @@
                     <!-- 3. Integrasi Pesanan WhatsApp -->
                     <div class="bg-amber-50 border border-amber-200/60 rounded-2xl p-4 space-y-3">
                         <div class="flex items-start space-x-2.5">
-                            <i class="fa-solid fa-circle-info text-amber-500 mt-0.5 text-sm"></i>
+                            <i class="fa-solid fa-circle-info text-amber-500 mt-0.5"></i>
                             <p class="text-xs text-amber-800 leading-relaxed font-medium">
                                 Semua data yang Anda ketik di atas akan dirangkai menjadi draf pesanan WhatsApp otomatis secara instan.
                             </p>
@@ -368,19 +445,19 @@
                     <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-3 mb-4">
                         <div class="flex items-center space-x-2 bg-slate-200/80 p-1.5 rounded-2xl">
                             <button onclick="changeView('mobile')" id="btn-view-mobile" class="view-btn px-4 py-1.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-900 shadow-sm">
-                                <i class="fa-solid fa-mobile-screen-button mr-1"></i> Mobile (HP)
+                                <i class="fa-solid fa-mobile-screen-button mr-1.5"></i> Mobile (HP)
                             </button>
                             <button onclick="changeView('tablet')" id="btn-view-tablet" class="view-btn px-4 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 hover:text-slate-900">
-                                <i class="fa-solid fa-tablet-screen-button mr-1"></i> Tablet
+                                <i class="fa-solid fa-tablet-screen-button mr-1.5"></i> Tablet
                             </button>
                             <button onclick="changeView('desktop')" id="btn-view-desktop" class="view-btn px-4 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 hover:text-slate-900">
-                                <i class="fa-solid fa-desktop mr-1"></i> Desktop
+                                <i class="fa-solid fa-desktop mr-1.5"></i> Desktop
                             </button>
                         </div>
                         
-                        <!-- Pemicu Full Screen Preview -->
-                        <button onclick="enterFullScreenPreview()" class="w-full sm:w-auto px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-indigo-500/20 active:scale-95 transition-all">
-                            <i class="fa-solid fa-expand"></i> Lihat Layar Penuh (Live Preview)
+                        <!-- Pemicu Live Preview membawa pengguna ke bawah ke bagian Inspirasi Portofolio Pilihan -->
+                        <button onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });" class="w-full sm:w-auto px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-indigo-500/20 active:scale-95 transition-all font-sans">
+                            <i class="fa-solid fa-eye"></i> Lihat Semua Demo (Live Preview)
                         </button>
                     </div>
 
@@ -397,9 +474,9 @@
                                 <!-- Simulator Alamat Browser -->
                                 <div class="bg-slate-50 border-b border-slate-100 px-4 py-2 flex items-center space-x-2 shrink-0 select-none">
                                     <div class="flex space-x-1">
-                                        <span class="w-2 h-2 rounded-full bg-slate-200"></span>
-                                        <span class="w-2 h-2 rounded-full bg-slate-200"></span>
-                                        <span class="w-2 h-2 rounded-full bg-slate-200"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
                                     </div>
                                     <div id="address-bar" class="flex-1 bg-white border border-slate-200 rounded-lg text-[9px] text-slate-400 py-0.5 px-2 text-center truncate">
                                         https://aris-setiawan.github.io
@@ -437,25 +514,25 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-10">
                 <!-- Langkah 1 -->
                 <button onclick="selectWorkflowStep(1)" id="step-card-1" class="workflow-card p-6 rounded-2xl border text-left transition-all duration-300 bg-brand-50 border-brand-500 shadow-md shadow-brand-500/5">
-                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-black mb-4">1</div>
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-black mb-4 font-sans">1</div>
                     <h3 class="text-sm font-bold text-slate-900">Isi Data &amp; Konsultasi</h3>
                     <p class="text-xs text-slate-500 mt-2 line-clamp-2">Isi formulir data diri, riwayat, serta foto melalui Google Form singkat.</p>
                 </button>
                 <!-- Langkah 2 -->
                 <button onclick="selectWorkflowStep(2)" id="step-card-2" class="workflow-card p-6 rounded-2xl border text-left transition-all duration-300 border-slate-200 hover:border-brand-300">
-                    <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center font-black mb-4">2</div>
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center font-black mb-4 font-sans">2</div>
                     <h3 class="text-sm font-bold text-slate-900">Pilih Desain Ideal</h3>
-                    <p class="text-xs text-slate-500 mt-2 line-clamp-2">Pilih 1 dari 3 templat andalan kami sesuai dengan karakter karir Anda.</p>
+                    <p class="text-xs text-slate-500 mt-2 line-clamp-2">Pilih 1 dari 12 templat andalan kami sesuai dengan karakter karir Anda.</p>
                 </button>
                 <!-- Langkah 3 -->
                 <button onclick="selectWorkflowStep(3)" id="step-card-3" class="workflow-card p-6 rounded-2xl border text-left transition-all duration-300 border-slate-200 hover:border-brand-300">
-                    <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center font-black mb-4">3</div>
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center font-black mb-4 font-sans">3</div>
                     <h3 class="text-sm font-bold text-slate-900">Rakit &amp; Optimasi</h3>
                     <p class="text-xs text-slate-500 mt-2 line-clamp-2">Kami merakit kodenya serta memastikan performa aksesnya super cepat.</p>
                 </button>
                 <!-- Langkah 4 -->
                 <button onclick="selectWorkflowStep(4)" id="step-card-4" class="workflow-card p-6 rounded-2xl border text-left transition-all duration-300 border-slate-200 hover:border-brand-300">
-                    <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center font-black mb-4">4</div>
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center font-black mb-4 font-sans">4</div>
                     <h3 class="text-sm font-bold text-slate-900">Rilis &amp; Live Online</h3>
                     <p class="text-xs text-slate-500 mt-2 line-clamp-2">CV Anda resmi online di GitHub Pages secara gratis s/d 5 tahun.</p>
                 </button>
@@ -467,7 +544,7 @@
                     <i class="fa-solid fa-file-invoice"></i>
                 </div>
                 <div class="space-y-2 flex-1 text-center md:text-left">
-                    <span class="text-[10px] font-black uppercase text-brand-600 tracking-wider" id="step-detail-badge">Langkah 1</span>
+                    <span class="text-[10px] font-black uppercase text-brand-600 tracking-wider font-sans" id="step-detail-badge">Langkah 1</span>
                     <h4 class="text-lg font-bold text-slate-900" id="step-detail-title">Isi Data &amp; Konsultasi Karir</h4>
                     <p class="text-xs text-slate-600 leading-relaxed" id="step-detail-desc">
                         Setelah Anda mengonfirmasi pesanan melalui WhatsApp, kami akan mengirimkan tautan Google Form yang mudah diisi. Anda cukup memasukkan biodata, riwayat pendidikan, serta foto profesional terbaik. Tidak perlu mengerti coding, semua kami yang urus!
@@ -489,72 +566,252 @@
                 </p>
             </div>
 
-            <!-- Tombol Filter -->
+            <!-- Tombol Filter Fleksibel Kategori Industri -->
             <div class="flex flex-wrap justify-center gap-2 mb-10">
-                <button onclick="filterPortfolio('all')" id="btn-filter-all" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-brand-600 text-white shadow-md">Semua Desain</button>
-                <button onclick="filterPortfolio('tech')" id="btn-filter-tech" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50">Developer (Tech)</button>
-                <button onclick="filterPortfolio('creative')" id="btn-filter-creative" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50">Artisan (Kreatif)</button>
-                <button onclick="filterPortfolio('corporate')" id="btn-filter-corporate" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50">Executive (Bisnis)</button>
+                <button onclick="filterPortfolio('all')" id="btn-filter-all" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-brand-600 text-white shadow-md font-sans">Semua Desain (12)</button>
+                <button onclick="filterPortfolio('tech')" id="btn-filter-tech" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 font-sans">Tech &amp; Dev</button>
+                <button onclick="filterPortfolio('creative')" id="btn-filter-creative" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 font-sans font-sans">Creative &amp; Art</button>
+                <button onclick="filterPortfolio('corporate')" id="btn-filter-corporate" class="portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 font-sans font-sans">Professional &amp; Biz</button>
             </div>
 
-            <!-- Grid Kartu Portofolio -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Kartu 1: Tech -->
-                <div class="portfolio-item-card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="tech">
-                    <div class="p-6 space-y-4">
+            <!-- Grid Kartu Portofolio 12 Kolom -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 font-sans">
+                <!-- 1. Developer (Tech) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="tech">
+                    <div class="p-5 space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="bg-indigo-50 text-indigo-700 text-[10px] font-black uppercase px-2.5 py-1 rounded-full font-mono">Gaya Developer</span>
+                            <span class="bg-indigo-50 text-indigo-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full font-mono">Gaya Developer</span>
                             <i class="fa-solid fa-code text-indigo-600"></i>
                         </div>
-                        <h3 class="text-md font-bold text-slate-900">Yogi Pratama, S.Kom</h3>
-                        <p class="text-xs text-slate-500 leading-relaxed">Layout gelap minimalis modern yang sangat cocok untuk Web Developer, System Administrator, serta Cloud Engineer.</p>
+                        <h3 class="text-sm font-bold text-slate-900">Yogi Pratama, S.Kom</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Layout gelap minimalis modern yang sangat cocok untuk Web Developer, System Administrator, serta Cloud Engineer.</p>
                     </div>
-                    <div class="p-6 bg-slate-50 border-t border-slate-100 flex flex-col gap-2">
-                        <button onclick="tryPortfolioTemplate('tech', 'tech')" class="w-full py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('tech', 'tech')" class="w-full py-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
                             <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
                         </button>
-                        <a href="demo-developer.html" target="_blank" class="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-center">
-                            <i class="fa-solid fa-eye"></i> Lihat Demo Full Page
+                        <a href="demo-developer.html" target="_blank" class="w-full py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
                         </a>
                     </div>
                 </div>
 
-                <!-- Kartu 2: Creative -->
-                <div class="portfolio-item-card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="creative">
-                    <div class="p-6 space-y-4">
+                <!-- 2. Artisan (Creative) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="creative">
+                    <div class="p-5 space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="bg-amber-50 text-amber-800 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Gaya Artisan</span>
+                            <span class="bg-amber-50 text-amber-800 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Artisan</span>
                             <i class="fa-solid fa-paintbrush text-amber-600"></i>
                         </div>
-                        <h3 class="text-md font-bold text-slate-900">Amelia Kirana</h3>
-                        <p class="text-xs text-slate-500 leading-relaxed">Estetika warm off-white koran jurnal yang disukai oleh UI/UX Designer, Ilustrator, atau Konten Kreator.</p>
+                        <h3 class="text-sm font-bold text-slate-900">Amelia Kirana</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Estetika warm off-white koran jurnal yang disukai oleh UI/UX Designer, Ilustrator, atau Konten Kreator.</p>
                     </div>
-                    <div class="p-6 bg-slate-50 border-t border-slate-100 flex flex-col gap-2">
-                        <button onclick="tryPortfolioTemplate('creative', 'creative')" class="w-full py-2 bg-amber-50 hover:bg-amber-100 text-amber-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('creative', 'creative')" class="w-full py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-800 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
                             <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
                         </button>
-                        <a href="demo-artisan.html" target="_blank" class="w-full py-2 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-center">
-                            <i class="fa-solid fa-eye"></i> Lihat Demo Full Page
+                        <a href="demo-artisan.html" target="_blank" class="w-full py-1.5 bg-amber-600 hover:bg-amber-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
                         </a>
                     </div>
                 </div>
 
-                <!-- Kartu 3: Corporate -->
-                <div class="portfolio-item-card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="corporate">
-                    <div class="p-6 space-y-4">
+                <!-- 3. Executive (Corporate) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="corporate">
+                    <div class="p-5 space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="bg-sky-50 text-sky-700 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Gaya Executive</span>
+                            <span class="bg-sky-50 text-sky-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Executive</span>
                             <i class="fa-solid fa-briefcase text-sky-600"></i>
                         </div>
-                        <h3 class="text-md font-bold text-slate-900">Hendra Wijaya, MBA</h3>
-                        <p class="text-xs text-slate-500 leading-relaxed">Layout korporat keren dengan warna biru yang memiliki integritas. Ideal untuk Project Manager, Marketer, &amp; Manajer Finansial.</p>
+                        <h3 class="text-sm font-bold text-slate-900">Hendra Wijaya, MBA</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Layout korporat keren dengan warna biru yang memiliki integritas. Ideal untuk Project Manager, Marketer, &amp; Manajer Finansial.</p>
                     </div>
-                    <div class="p-6 bg-slate-50 border-t border-slate-100 flex flex-col gap-2">
-                        <button onclick="tryPortfolioTemplate('corporate', 'corporate')" class="w-full py-2 bg-sky-50 hover:bg-sky-100 text-sky-700 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('corporate', 'corporate')" class="w-full py-1.5 bg-sky-50 hover:bg-sky-100 text-sky-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
                             <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
                         </button>
-                        <a href="demo-executive.html" target="_blank" class="w-full py-2 bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-center">
-                            <i class="fa-solid fa-eye"></i> Lihat Demo Full Page
+                        <a href="demo-executive.html" target="_blank" class="w-full py-1.5 bg-sky-600 hover:bg-sky-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. Elegant (Corporate) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="corporate">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-emerald-50 text-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Elegant</span>
+                            <i class="fa-solid fa-crown text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900">Sarah Clarissa, M.A.</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Estetika kemewahan editorial, tipografi anggun, &amp; aksen emas. Sempurna untuk Copywriter premium, Penulis, &amp; Konsultan.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('elegant', 'elegant')" class="w-full py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-elegant.html" target="_blank" class="w-full py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. Retro (Creative) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="creative">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-rose-50 text-rose-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full font-retro">Gaya Retro</span>
+                            <i class="fa-solid fa-cubes text-rose-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900">Gilang Samudra</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Gaya desain Neo-Brutalisme dengan layout pastel cerah yang asyik bagi Ilustrator &amp; Desainer Grafis.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('retro', 'retro')" class="w-full py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-retro.html" target="_blank" class="w-full py-1.5 bg-rose-600 hover:bg-rose-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. Mint (Corporate) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="corporate">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-teal-50 text-teal-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Mint</span>
+                            <i class="fa-solid fa-seedling text-teal-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900">Aria Gibran</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Tampilan kaca semi-transparan (Glassmorphic) mint hijau sejuk yang fungsional bagi Product Manager.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('neomint', 'neomint')" class="w-full py-1.5 bg-teal-50 hover:bg-teal-100 text-teal-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-neomint.html" target="_blank" class="w-full py-1.5 bg-teal-600 hover:bg-teal-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7. Cyberpunk (Tech) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="tech">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-fuchsia-50 text-fuchsia-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full font-sans">Gaya Cyberpunk</span>
+                            <i class="fa-solid fa-bolt text-fuchsia-600"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900">Rian "Viper" Wijaya</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Gaya sci-fi futuristik gelap dengan border neon menyala untuk para Game Developer &amp; Security Analyst.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('cyber', 'cyber')" class="w-full py-1.5 bg-fuchsia-50 hover:bg-fuchsia-100 text-fuchsia-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-cyberpunk.html" target="_blank" class="w-full py-1.5 bg-fuchsia-600 hover:bg-fuchsia-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8. Soft UI (Corporate) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="corporate">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-slate-100 text-slate-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Soft UI</span>
+                            <i class="fa-solid fa-circle-nodes text-slate-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-950 font-sans">Dr. Adrian Hartanto</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Neumorphism premium tactile untuk visualisasi algoritma bersih yang cocok bagi AI &amp; Data Researcher.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('soft', 'soft')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-neumorphism.html" target="_blank" class="w-full py-1.5 bg-slate-700 hover:bg-slate-800 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9. Aurora (Tech) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="tech">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-violet-50 text-violet-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Aurora</span>
+                            <i class="fa-solid fa-wand-magic text-violet-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900">Reza Raditya, M.T.</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Pendaran neon glow aurora pada latar belakang kaca transparan untuk Research &amp; AI Engineers.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('aurora', 'aurora')" class="w-full py-1.5 bg-violet-50 hover:bg-violet-100 text-violet-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-aurora.html" target="_blank" class="w-full py-1.5 bg-[#4f46e5] hover:bg-indigo-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 10. Nordic (Creative) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="creative">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-orange-50 text-orange-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Nordic</span>
+                            <i class="fa-solid fa-house text-orange-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900">Lukas Kirana, S.Ars</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Clean minimalis Scandinavian, garis abu-abu tipis, serta ruang luas yang cocok untuk arsitek &amp; desainer interior.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('nordic', 'nordic')" class="w-full py-1.5 bg-orange-50 hover:bg-orange-100 text-orange-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-nordic.html" target="_blank" class="w-full py-1.5 bg-[#1c1917] hover:bg-stone-800 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 11. Clay (Creative) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="creative">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-pink-50 text-pink-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full font-playful">Gaya Clay</span>
+                            <i class="fa-solid fa-face-smile text-pink-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900 font-sans">Milo Ardiansyah</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Estetika 3D Claymorphism pastel yang super ceria bagi ilustrator 3D, artis maskot, dan visual game kasual.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('clay', 'clay')" class="w-full py-1.5 bg-pink-50 hover:bg-pink-100 text-pink-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-clay.html" target="_blank" class="w-full py-1.5 bg-[#ff7597] hover:bg-pink-600 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 12. Swiss (Tech) -->
+                <div class="portfolio-item-card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300" data-category="tech">
+                    <div class="p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-50 text-red-700 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">Gaya Swiss</span>
+                            <i class="fa-solid fa-heading text-red-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900">Hans Schmidt</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">Asymmetric grid tebal dengan tipografi stark Bauhaus hitam-merah fungsional untuk Creative &amp; Art Director.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-1.5">
+                        <button onclick="tryPortfolioTemplate('swiss', 'swiss')" class="w-full py-1.5 bg-red-50 hover:bg-red-100 text-red-700 text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Coba di Simulator
+                        </button>
+                        <a href="demo-swiss.html" target="_blank" class="w-full py-1.5 bg-red-600 hover:bg-red-700 text-white text-[11px] font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 text-center">
+                            <i class="fa-solid fa-eye"></i> Lihat Demo Full
                         </a>
                     </div>
                 </div>
@@ -575,14 +832,14 @@
                 </p>
             </div>
 
-            <!-- Kotak Dashboard Pilihan Add-ons -->
+            <!-- Kotak Dashboard Pilihan Add-ons (DISEDERHANAKAN MENJADI 3 ITEM SAJA, SEO DIHAPUS) -->
             <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-3xl p-6 shadow-sm mb-12 space-y-4">
                 <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider flex items-center border-b border-slate-100 pb-2">
                     <i class="fa-solid fa-circle-plus text-brand-500 mr-2"></i> Kustomisasi Tambahan Fitur (Add-ons)
                 </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <!-- Add-on 1: Selesai Kilat -->
-                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:border-brand-300 cursor-pointer select-none">
+                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:border-brand-300 cursor-pointer select-none font-sans">
                         <input type="checkbox" id="addon-express" onchange="updateTotalPrice()" class="w-4 h-4 text-brand-600 focus:ring-brand-500 border-slate-300 rounded">
                         <div>
                             <span class="text-[11px] font-bold block">Selesai Kilat (24 Jam)</span>
@@ -590,27 +847,19 @@
                         </div>
                     </label>
                     <!-- Add-on 2: Kontak Form -->
-                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:border-brand-300 cursor-pointer select-none">
+                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:border-brand-300 cursor-pointer select-none font-sans">
                         <input type="checkbox" id="addon-contact" onchange="updateTotalPrice()" class="w-4 h-4 text-brand-600 focus:ring-brand-500 border-slate-300 rounded">
                         <div>
-                            <span class="text-[11px] font-bold block">Kontak Form Aktif</span>
+                            <span class="text-[11px] font-bold block">Kontak Form Email Aktif</span>
                             <span class="text-[9px] text-slate-500">+ Rp 30.000</span>
                         </div>
                     </label>
                     <!-- Add-on 3: Bilingual Switcher -->
-                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:border-brand-300 cursor-pointer select-none">
+                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:border-brand-300 cursor-pointer select-none font-sans">
                         <input type="checkbox" id="addon-bilingual" onchange="updateTotalPrice()" class="w-4 h-4 text-brand-600 focus:ring-brand-500 border-slate-300 rounded">
                         <div>
                             <span class="text-[11px] font-bold block">Fitur Dua Bahasa</span>
                             <span class="text-[9px] text-slate-500">+ Rp 40.000</span>
-                        </div>
-                    </label>
-                    <!-- Add-on 4: SEO Optimasi -->
-                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:border-brand-300 cursor-pointer select-none">
-                        <input type="checkbox" id="addon-seo" onchange="updateTotalPrice()" class="w-4 h-4 text-brand-600 focus:ring-brand-500 border-slate-300 rounded">
-                        <div>
-                            <span class="text-[11px] font-bold block">Optimasi Google SEO</span>
-                            <span class="text-[9px] text-slate-500">+ Rp 25.000</span>
                         </div>
                     </label>
                 </div>
@@ -618,25 +867,25 @@
 
             <!-- Single Premium Card Layout (Super High Converting) -->
             <div class="max-w-xl mx-auto bg-white rounded-3xl border-2 border-brand-500 relative shadow-xl shadow-brand-500/5 flex flex-col justify-between p-8 sm:p-10">
-                <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-brand-500 text-white text-[10px] font-black uppercase px-5 py-1.5 rounded-full tracking-wider">REKOMENDASI TERBAIK</span>
+                <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-brand-500 text-white text-[10px] font-black uppercase px-5 py-1.5 rounded-full tracking-wider font-sans">REKOMENDASI TERBAIK</span>
                 
                 <div class="space-y-6">
                     <div class="text-center sm:text-left">
-                        <span class="bg-brand-100 text-brand-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Layanan Lengkap (All-in-One)</span>
+                        <span class="bg-brand-100 text-brand-700 text-xs font-bold px-3 py-1 rounded-full uppercase font-sans">Layanan Lengkap (All-in-One)</span>
                         <h3 class="text-3xl font-black text-slate-900 mt-3">Paket CV Premium</h3>
                         <p class="text-xs text-slate-500 mt-1">Solusi komplit portofolio digital bebas sewa server s/d 5 tahun</p>
                     </div>
                     
                     <div class="flex justify-center sm:justify-start items-baseline">
-                        <span class="text-4xl font-black text-slate-900" id="price-main">Rp 150.000</span>
-                        <span class="text-xs text-slate-500 ml-1.5 font-medium">/ bayar sekali</span>
+                        <span class="text-4xl font-black text-slate-900 font-sans" id="price-main">Rp 150.000</span>
+                        <span class="text-xs text-slate-500 ml-1.5 font-medium font-sans">/ bayar sekali</span>
                     </div>
                     
                     <hr class="border-slate-100">
 
                     <ul class="space-y-3.5 text-xs text-slate-600">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mr-2.5 mt-0.5"></i> <span>Tampilan Website Responsif (Pilihan Desain Developer, Artisan, atau Executive)</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mr-2.5 mt-0.5"></i> <span>Dihubungkan ke Subdomain Unik: <span class="font-bold text-slate-800">nama-kamu.github.io</span></span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mr-2.5 mt-0.5"></i> <span>Tampilan Website Responsif (Pilihan Desain Developer, Artisan, Executive, Elegant, Retro, Mint, dll.)</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mr-2.5 mt-0.5"></i> <span>Dihubungkan ke Subdomain Unik: <span class="font-bold text-slate-800 font-sans">nama-kamu.github.io</span></span></li>
                         <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mr-2.5 mt-0.5"></i> <span>Identitas, Profil Singkat, Pendidikan, &amp; Riwayat Lengkap</span></li>
                         <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mr-2.5 mt-0.5"></i> <span>Tautan Cepat ke Sosial Media, WhatsApp, LinkedIn, &amp; Email</span></li>
                         <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mr-2.5 mt-0.5"></i> <span>Garansi Bebas Biaya Server s/d 5 Tahun!</span></li>
@@ -645,7 +894,7 @@
                 </div>
                 
                 <div class="pt-8">
-                    <button onclick="orderPackage()" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition-all text-center block shadow-lg shadow-brand-500/20 active:scale-95">
+                    <button onclick="orderPackage()" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition-all text-center block shadow-lg shadow-brand-500/20 active:scale-95 font-sans">
                         <i class="fa-brands fa-whatsapp mr-2 text-sm"></i> Pesan CV Premium Sekarang
                     </button>
                 </div>
@@ -706,7 +955,7 @@
     <section id="faq" class="py-20 bg-slate-100 border-t border-slate-200/80">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl font-sans">
                     Pertanyaan yang Sering Diajukan
                 </h2>
                 <p class="mt-4 text-lg text-slate-600">
@@ -719,7 +968,7 @@
                 <!-- FAQ 1 -->
                 <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all">
                     <button onclick="toggleFaq(1)" class="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-50/50 transition-colors">
-                        <span class="text-xs sm:text-sm font-bold text-slate-900">Apakah nantinya saya harus membayar biaya perpanjangan server?</span>
+                        <span class="text-xs sm:text-sm font-bold text-slate-900 font-sans">Apakah nantinya saya harus membayar biaya perpanjangan server?</span>
                         <i id="faq-icon-1" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300"></i>
                     </button>
                     <div id="faq-answer-1" class="hidden px-6 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-4">
@@ -730,7 +979,7 @@
                 <!-- FAQ 2 -->
                 <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all">
                     <button onclick="toggleFaq(2)" class="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-50/50 transition-colors">
-                        <span class="text-xs sm:text-sm font-bold text-slate-900">Data apa saja yang harus disiapkan oleh saya untuk pembuatannya?</span>
+                        <span class="text-xs sm:text-sm font-bold text-slate-900 font-sans">Data apa saja yang harus disiapkan oleh saya untuk pembuatannya?</span>
                         <i id="faq-icon-2" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300"></i>
                     </button>
                     <div id="faq-answer-2" class="hidden px-6 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-4">
@@ -741,7 +990,7 @@
                 <!-- FAQ 3 -->
                 <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all">
                     <button onclick="toggleFaq(3)" class="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-50/50 transition-colors">
-                        <span class="text-xs sm:text-sm font-bold text-slate-900">Saya tidak mengerti coding, apakah saya tetap bisa menggunakannya?</span>
+                        <span class="text-xs sm:text-sm font-bold text-slate-900 font-sans">Saya tidak mengerti coding, apakah saya tetap bisa menggunakannya?</span>
                         <i id="faq-icon-3" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300"></i>
                     </button>
                     <div id="faq-answer-3" class="hidden px-6 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-4">
@@ -757,46 +1006,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
             <span class="text-lg font-bold text-white tracking-tight">Halo<span class="text-brand-500">Portoku</span></span>
             <p class="text-xs">Solusi cerdas pembuatan website curriculum vitae modern, aman, responsif, serta bebas biaya bulanan.</p>
-            <p class="text-[10px] text-slate-500">© 2026 HaloPortoku. Powered by GitHub Pages. All Rights Reserved.</p>
+            <p class="text-[10px] text-slate-500 font-sans">© 2026 HaloPortoku. Powered by GitHub Pages. All Rights Reserved.</p>
         </div>
     </footer>
 
 </div> <!-- AKHIR DARI KONTEN LANDING PAGE -->
 
-
-<!-- 🚀 MODE PREVIEW HALAMAN PENUH (Disembunyikan secara Default) -->
-<div id="full-screen-preview" class="hidden fixed inset-0 z-50 bg-white overflow-y-auto flex flex-col">
-    
-    <!-- Floating Controller Bar Atas -->
-    <div class="bg-slate-900/90 backdrop-blur border-b border-slate-800 px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 sticky top-0 z-50">
-        <div class="flex items-center space-x-3">
-            <button onclick="exitFullScreenPreview()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl flex items-center gap-2 transition-all">
-                <i class="fa-solid fa-arrow-left"></i> Kembali ke Editor
-            </button>
-            <span class="text-slate-500">|</span>
-            <span class="text-xs text-slate-300 font-medium">Mode Preview Halaman Penuh</span>
-        </div>
-        
-        <!-- Pindah Tema cepat & Tombol Pesen -->
-        <div class="flex flex-wrap items-center gap-2">
-            <!-- Selector Tema -->
-            <div class="flex bg-slate-800 p-1 rounded-xl">
-                <button onclick="changeTemplate('tech')" id="btn-full-tech" class="px-3 py-1.5 text-[11px] font-bold rounded-lg transition-all text-slate-400 hover:text-white">Developer</button>
-                <button onclick="changeTemplate('creative')" id="btn-full-creative" class="px-3 py-1.5 text-[11px] font-bold rounded-lg transition-all text-slate-400 hover:text-white">Artisan</button>
-                <button onclick="changeTemplate('corporate')" id="btn-full-corporate" class="px-3 py-1.5 text-[11px] font-bold rounded-lg transition-all text-slate-400 hover:text-white">Executive</button>
-            </div>
-            
-            <button onclick="sendOrder()" class="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl flex items-center gap-2 shadow-lg shadow-emerald-500/10 transition-all">
-                <i class="fa-brands fa-whatsapp"></i> Pesan CV Ini
-            </button>
-        </div>
-    </div>
-    
-    <!-- Wadah Output Bingkai Nyata -->
-    <div id="full-preview-container" class="flex-1 w-full bg-slate-50">
-        <!-- Rendered Full Template output oleh JS -->
-    </div>
-</div>
 
 <!-- DATA STATE SIMULATOR & RENDERING ENGINE -->
 <script>
@@ -806,17 +1021,16 @@
         title: "Product Designer & Frontend Enthusiast",
         bio: "Saya adalah seorang pembuat website kreatif berpengalaman membantu puluhan UMKM lokal bertransformasi secara digital.",
         skill1: "UI/UX Design",
-        skill2: "React & Tailwind CSS",
-        skill3: "GitHub Pages & Hosting",
+        skill2: "React &amp; Tailwind CSS",
+        skill3: "GitHub Pages &amp; Hosting",
         activeTemplate: "tech",
         viewMode: "mobile"
     };
 
-    // const avatarPlaceholder = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop";
     const avatarPlaceholder = "https://haloportoku.github.io/HaloPortoku/promo/promo.png";
 
-    // Data sampel dummy untuk load otomatis
-    const sampleData = {
+    // Data sampel dummy lengkap untuk seluruh 12 tema di Simulator
+    const sampleData = {    
         tech: {
             name: "Yogi Pratama, S.Kom",
             title: "Cyber Security Analyst & Cloud Engineer",
@@ -840,18 +1054,89 @@
             skill1: "Agile Scrum Master",
             skill2: "Business Analytics",
             skill3: "Risk Management"
+        },
+        elegant: {
+            name: "Sarah Clarissa, M.A.",
+            title: "Brand Storyteller & Editorial Writer",
+            bio: "Merangkai narasi tulisan berkelas tinggi yang menghidupkan jiwa identitas sebuah brand. Berpengalaman menulis esai, kopi pemasaran mewah, dan bekerja sama dengan jenama mode global.",
+            skill1: "Creative Writing",
+            skill2: "Content Strategy",
+            skill3: "Lux Branding"
+        },
+        retro: {
+            name: "Gilang Samudra",
+            title: "Graphic Designer & Illustrator",
+            bio: "Menciptakan gaya visual modern retro, poster Neo-Brutalisme, dan ilustrasi digital yang berkarakter kuat. Berpengalaman 3+ tahun membantu jenama lokal hingga luar negeri.",
+            skill1: "Poster Design",
+            skill2: "Retro Illustration",
+            skill3: "Radical Branding"
+        },
+        neomint: {
+            name: "Aria Gibran",
+            title: "Product Manager & UI/UX Designer",
+            bio: "Menjembatani strategi bisnis, kebutuhan pengguna, dan eksekusi visual desain antarmuka. Berfokus pada penciptaan produk digital berbasis SaaS yang fungsional, bersih, dan estetik.",
+            skill1: "UI/UX Strategy",
+            skill2: "Product Planning",
+            skill3: "Interactive Design"
+        },
+        cyber: {
+            name: "Rian \"Viper\" Wijaya",
+            title: "Game Developer & Cyber Security",
+            bio: "Merakit dunia digital virtual interaktif, meretas batas-batas sistem server, serta menguji kerentanan jaringan cyber. Berfokus pada Unity Engine.",
+            skill1: "Unity & VR Tech",
+            skill2: "Penetration Testing",
+            skill3: "Python & C# Code"
+        },
+        soft: {
+            name: "Dr. Adrian Hartanto",
+            title: "AI Researcher & Data Scientist",
+            bio: "Meriset model kecerdasan buatan terapan, melakukan penambangan data, serta merancang visualisasi algoritme yang intuitif untuk optimasi sistem bisnis.",
+            skill1: "Neural Networks",
+            skill2: "Data Science",
+            skill3: "Python Scripting"
+        },
+        aurora: {
+            name: "Reza Raditya, M.T.",
+            title: "AI Specialist & Research Engineer",
+            bio: "Mengeksplorasi kecerdasan buatan tingkat lanjut, rekayasa data sistem, serta perancangan visualisasi struktur komputasi skala korporat.",
+            skill1: "Deep Learning",
+            skill2: "Data Pipeline",
+            skill3: "PyTorch & Python"
+        },
+        nordic: {
+            name: "Lukas Kirana, S.Ars",
+            title: "Minimalist Architect & Space Designer",
+            bio: "Mengeksplorasi hubungan antara ruang, cahaya alami, dan material mentah secara fungsional demi menciptakan hunian residensial yang tenang.",
+            skill1: "Architect Concept",
+            skill2: "Lighting Strategy",
+            skill3: "Interior Layouts"
+        },
+        clay: {
+            name: "Milo Ardiansyah",
+            title: "3D Character & Playful Illustrator",
+            bio: "Mengubah ide mentah menjadi model karakter 3D bergaya clay yang menggemaskan, ramah mata, dan penuh warna ceria.",
+            skill1: "3D Clay Modeling",
+            skill2: "Playful Illust",
+            skill3: "Game UI Asset"
+        },
+        swiss: {
+            name: "Hans Schmidt",
+            title: "Creative Director & Editorial",
+            bio: "Mengkombinasikan grid geometris yang radikal, tipografi yang fungsional, dan asimetri ruang untuk menyampaikan identitas visual berkelas tinggi.",
+            skill1: "Asymmetric Layout",
+            skill2: "Editorial Design",
+            skill3: "Swiss Branding"
         }
     };
 
     // Harga Dasar
     const basePrice = 150000;
 
-    // Harga Add-ons
+    // Harga Add-ons (Tanpa SEO)
     const addonPrices = {
         express: 50000,
         contact: 30000,
-        bilingual: 40000,
-        seo: 25000
+        bilingual: 40000
     };
 
     // State Testimoni
@@ -863,55 +1148,18 @@
         const currentTheme = sandboxState.activeTemplate;
         const currentDummy = sampleData[currentTheme];
         
-        document.getElementById('input-name').value = currentDummy.name;
-        document.getElementById('input-title').value = currentDummy.title;
-        document.getElementById('input-bio').value = currentDummy.bio;
-        document.getElementById('input-skill1').value = currentDummy.skill1;
-        document.getElementById('input-skill2').value = currentDummy.skill2;
-        document.getElementById('input-skill3').value = currentDummy.skill3;
-        
-        updateSandbox();
+        if (currentDummy) {
+            document.getElementById('input-name').value = currentDummy.name;
+            document.getElementById('input-title').value = currentDummy.title;
+            document.getElementById('input-bio').value = currentDummy.bio;
+            document.getElementById('input-skill1').value = currentDummy.skill1;
+            document.getElementById('input-skill2').value = currentDummy.skill2;
+            document.getElementById('input-skill3').value = currentDummy.skill3;
+            updateSandbox();
+        }
     }
 
-    // Fungsi masuk ke mode Halaman Penuh (Live Preview)
-    function enterFullScreenPreview() {
-        document.getElementById('landing-page-content').classList.add('hidden');
-        document.getElementById('full-screen-preview').classList.remove('hidden');
-        
-        // Atur scroll browser ke atas
-        window.scrollTo(0, 0);
-        
-        updateFullPreviewThemeButton();
-        renderSimulation();
-    }
-
-    // Fungsi keluar dari mode Halaman Penuh
-    function exitFullScreenPreview() {
-        document.getElementById('full-screen-preview').classList.add('hidden');
-        document.getElementById('landing-page-content').classList.remove('hidden');
-        
-        // Gulung kembali ke bagian Demo
-        document.getElementById('demo').scrollIntoView();
-    }
-
-    // Sinkronisasi status tombol tema pada preview full screen
-    function updateFullPreviewThemeButton() {
-        const active = sandboxState.activeTemplate;
-        const themes = ['tech', 'creative', 'corporate'];
-        
-        themes.forEach(t => {
-            const btn = document.getElementById(`btn-full-${t}`);
-            if (btn) {
-                if (t === active) {
-                    btn.className = "px-3 py-1.5 text-[11px] font-bold rounded-lg bg-brand-600 text-white shadow-md transition-all";
-                } else {
-                    btn.className = "px-3 py-1.5 text-[11px] font-bold rounded-lg text-slate-400 hover:text-white transition-all";
-                }
-            }
-        });
-    }
-
-    // Mengubah templat demo di simulator
+    // Mengubah templat demo di simulator (Mendukung 12 gaya desain baru)
     function changeTemplate(type) {
         sandboxState.activeTemplate = type;
         
@@ -924,9 +1172,6 @@
         if(activeBtn) {
             activeBtn.className = "template-btn p-3 rounded-2xl border text-center transition-all duration-200 bg-brand-50 border-brand-500 text-brand-700 ring-2 ring-brand-500/20";
         }
-
-        // Update status dalam Full Screen Preview
-        updateFullPreviewThemeButton();
 
         renderSimulation();
     }
@@ -968,266 +1213,143 @@
         sandboxState.skill2 = document.getElementById('input-skill2').value;
         sandboxState.skill3 = document.getElementById('input-skill3').value;
         
-        // Update alamat simulasi browser
-        const slug = sandboxState.name.toLowerCase().replace(/\s+/g, '-');
-        document.getElementById('address-bar').innerText = `https://${slug || 'username'}.github.io`;
-
-        renderSimulation();
+        renderViewport();
     }
 
-    // Render visualisasi simulasi (Bersih, Simpel, Modern)
+    // Render visualisasi simulasi secara dinamis untuk ke-12 gaya desain dengan FITUR LENGKAP UTUH
     function renderSimulation() {
         const simulatedViewport = document.getElementById('simulated-viewport');
-        const fullPreviewContainer = document.getElementById('full-preview-container');
-        
         let compiledHtml = '';
 
         if (sandboxState.activeTemplate === 'tech') {
-            // TEMPLATE DEVELOPER: Dark Code Mode Minimalis
+            // 1. DEVELOPER (Tech Dark)
             compiledHtml = `
-                <div class="min-h-full bg-[#0a0f1d] text-slate-100 flex flex-col font-mono p-6 sm:p-10 select-none">
-                    <div class="border border-slate-800/80 bg-[#0f172a]/90 p-6 rounded-2xl relative overflow-hidden mb-6">
-                        <div class="absolute top-3 right-3 flex space-x-1">
-                            <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
-                            <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
-                            <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
+                <div class="min-h-full bg-[#0a0f1d] text-slate-100 flex flex-col font-mono p-5 select-none">
+                    <div class="border border-slate-800 bg-[#0f172a] p-4 rounded-xl relative overflow-hidden mb-4 shrink-0">
+                        <div class="absolute top-2 right-2 flex space-x-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-slate-850"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-slate-850"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-slate-850"></span>
                         </div>
-                        <span class="text-[10px] text-sky-400 font-bold block mb-1">class Human {</span>
-                        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white font-sans">${sandboxState.name || 'Nama Anda'}</h1>
-                        <p class="text-xs font-bold text-sky-400 mt-1 uppercase tracking-wider">${sandboxState.title || 'Bidang Profesi'}</p>
+                        <span class="text-[9px] text-[#0ea5e9] font-bold block mb-1">class Human {</span>
+                        <h1 class="text-lg font-bold tracking-tight text-white font-sans">${sandboxState.name}</h1>
+                        <p class="text-[11px] font-bold text-sky-400 mt-1 uppercase tracking-wider font-sans">${sandboxState.title}</p>
                     </div>
                     
-                    <div class="space-y-6">
-                        <div class="space-y-2">
-                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-mono">// deskripsi_singkat</span>
-                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans font-light">${sandboxState.bio || 'Tentang saya...'}</p>
+                    <div class="space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">// profil</span>
+                            <p class="text-xs text-slate-300 leading-relaxed font-sans font-light">${sandboxState.bio}</p>
                         </div>
-                        
-                        <div class="space-y-3">
-                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-mono">// keahlian_inti</span>
-                            <div class="flex flex-wrap gap-1.5 font-sans">
-                                ${sandboxState.skill1 ? `<span class="inline-block bg-slate-900 border border-slate-800 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">${sandboxState.skill1}</span>` : ''}
-                                ${sandboxState.skill2 ? `<span class="inline-block bg-slate-900 border border-slate-800 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">${sandboxState.skill2}</span>` : ''}
-                                ${sandboxState.skill3 ? `<span class="inline-block bg-slate-900 border border-slate-800 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">${sandboxState.skill3}</span>` : ''}
+                        <div class="space-y-1.5">
+                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">// keahlian_inti</span>
+                            <div class="flex flex-wrap gap-1">
+                                ${sandboxState.skill1 ? `<span class="bg-slate-900 border border-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] font-sans">${sandboxState.skill1}</span>` : ''}
+                                ${sandboxState.skill2 ? `<span class="bg-slate-900 border border-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] font-sans">${sandboxState.skill2}</span>` : ''}
+                                ${sandboxState.skill3 ? `<span class="bg-slate-900 border border-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] font-sans">${sandboxState.skill3}</span>` : ''}
                             </div>
                         </div>
-
-                        <div class="space-y-4 pt-4 border-t border-slate-900">
-                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-mono">// rekam_jejak</span>
-                            <div class="border-l-2 border-slate-800 ml-2 pl-4 space-y-4 font-sans text-xs">
+                        <div class="space-y-2 pt-2 border-t border-slate-900">
+                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">// rekam_jejak</span>
+                            <div class="border-l-2 border-slate-850 ml-1.5 pl-3 space-y-3 font-sans text-[11px]">
                                 <div class="relative">
-                                    <span class="absolute -left-[21px] top-1 w-2 h-2 rounded-full bg-slate-800"></span>
-                                    <h4 class="font-bold text-slate-200">Senior Systems Specialist</h4>
-                                    <p class="text-slate-500 mt-0.5">PT Aero Digital Creative | 2024 - Aktif</p>
-                                </div>
-                                <div class="relative">
-                                    <span class="absolute -left-[21px] top-1 w-2 h-2 rounded-full bg-slate-800"></span>
-                                    <h4 class="font-bold text-slate-200">S1 Informatika</h4>
-                                    <p class="text-slate-500 mt-0.5">Universitas Indonesia | Lulus 2023</p>
+                                    <span class="absolute -left-[17px] top-1 w-1.5 h-1.5 rounded-full bg-teal-500"></span>
+                                    <h4 class="font-bold text-slate-200">Senior Web Developer</h4>
+                                    <p class="text-[10px] text-slate-500">PT Solusi Nusantara | 2024 - Aktif</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            `;
+                </div>`;
         } else if (sandboxState.activeTemplate === 'creative') {
-            // TEMPLATE ARTISAN: Journal / Warm Minimalist Estetis
+            // 2. ARTISAN (Aesthetic Warm)
             compiledHtml = `
-                <div class="min-h-full bg-[#fbfaf7] text-stone-800 flex flex-col font-serif p-6 sm:p-10 select-none">
-                    <div class="text-center py-12 bg-[#f4f2ec] rounded-[2rem] mb-6 border border-stone-200/40">
-                        <div class="w-16 h-16 rounded-full overflow-hidden mx-auto shadow-sm mb-4 bg-stone-300">
+                <div class="min-h-full bg-[#fbfaf7] text-stone-800 flex flex-col font-serif p-5 select-none">
+                    <div class="text-center py-6 bg-[#f4f2ec] rounded-2xl mb-4 border border-stone-200/40 shrink-0">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mx-auto shadow-sm mb-2 bg-stone-300">
                             <img src="${avatarPlaceholder}" class="w-full h-full object-cover" alt="avatar">
                         </div>
-                        <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 italic tracking-tight">${sandboxState.name || 'Nama Anda'}</h1>
-                        <p class="text-[10px] sm:text-xs font-sans font-bold text-stone-500 uppercase tracking-widest mt-2">${sandboxState.title || 'Bidang Profesi'}</p>
+                        <h1 class="text-base font-semibold text-stone-900 italic leading-tight">${sandboxState.name}</h1>
+                        <p class="text-[9px] font-sans font-bold text-stone-500 uppercase tracking-widest mt-1">${sandboxState.title}</p>
                     </div>
-                    <div class="space-y-6 font-sans text-xs">
-                        <p class="font-serif italic text-stone-600 text-sm leading-relaxed text-center px-4">"${sandboxState.bio || 'Profil kreatif...'}"</p>
-                        
-                        <div class="space-y-3 pt-6 border-t border-stone-200/60">
-                            <span class="text-[9px] font-extrabold text-stone-400 uppercase tracking-widest block text-center">Spesialisasi Seni Kerja</span>
-                            <div class="flex flex-wrap justify-center gap-1.5">
-                                ${sandboxState.skill1 ? `<span class="bg-white border border-stone-200 px-3 py-1 rounded-full text-[11px] text-stone-700">${sandboxState.skill1}</span>` : ''}
-                                ${sandboxState.skill2 ? `<span class="bg-white border border-stone-200 px-3 py-1 rounded-full text-[11px] text-stone-700">${sandboxState.skill2}</span>` : ''}
-                                ${sandboxState.skill3 ? `<span class="bg-white border border-stone-200 px-3 py-1 rounded-full text-[11px] text-stone-700">${sandboxState.skill3}</span>` : ''}
-                            </div>
+                    <div class="space-y-4 font-sans">
+                        <div class="space-y-1">
+                            <span class="text-[9px] font-bold text-stone-400 uppercase tracking-widest block font-sans">Kisah Singkat</span>
+                            <p class="text-xs font-serif italic text-stone-600 leading-relaxed">"${sandboxState.bio}"</p>
                         </div>
-
-                        <div class="space-y-3 pt-6 border-t border-stone-200/60">
-                            <span class="text-[9px] font-extrabold text-stone-400 uppercase tracking-widest block text-center">Tapak Karya</span>
-                            <div class="space-y-4 font-serif text-stone-700 max-w-md mx-auto">
-                                <div class="flex justify-between items-start text-xs border-b border-stone-100 pb-2">
-                                    <div>
-                                        <h4 class="font-semibold text-stone-900 italic">Desainer Kreatif Utama</h4>
-                                        <p class="text-[10px] font-sans text-stone-500 mt-0.5">Seni Rupa Studio, Bandung</p>
-                                    </div>
-                                    <span class="text-[10px] font-sans text-stone-400">2024 - Sekarang</span>
-                                </div>
-                                <div class="flex justify-between items-start text-xs border-b border-stone-100 pb-2">
-                                    <div>
-                                        <h4 class="font-semibold text-stone-900 italic">S1 Desain Komunikasi Visual</h4>
-                                        <p class="text-[10px] font-sans text-stone-500 mt-0.5">Fakultas Seni &amp; Budaya</p>
-                                    </div>
-                                    <span class="text-[10px] font-sans text-stone-400">Lulus 2023</span>
-                                </div>
+                        <div class="space-y-1.5">
+                            <span class="text-[9px] font-bold text-stone-400 uppercase tracking-widest block font-sans">Spesialisasi</span>
+                            <div class="flex flex-wrap gap-1">
+                                ${sandboxState.skill1 ? `<span class="bg-white border border-stone-200 px-2 py-0.5 rounded-full text-[10px] text-stone-700">${sandboxState.skill1}</span>` : ''}
+                                ${sandboxState.skill2 ? `<span class="bg-white border border-stone-200 px-2 py-0.5 rounded-full text-[10px] text-stone-700">${sandboxState.skill2}</span>` : ''}
+                                ${sandboxState.skill3 ? `<span class="bg-white border border-stone-200 px-2 py-0.5 rounded-full text-[10px] text-stone-700">${sandboxState.skill3}</span>` : ''}
                             </div>
                         </div>
                     </div>
-                </div>
-            `;
-        } else {
-            // TEMPLATE EXECUTIVE: SaaS / Minimalist Clean LinkedIn Look
+                </div>`;
+        } else if (sandboxState.activeTemplate === 'corporate') {
+            // 3. EXECUTIVE (SaaS Blue)
             compiledHtml = `
-                <div class="min-h-full bg-white text-slate-800 flex flex-col font-sans p-6 sm:p-10 select-none">
-                    <div class="mb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-6 border-b border-slate-100">
-                        <div>
-                            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">${sandboxState.name || 'Nama Anda'}</h1>
-                            <p class="text-xs text-brand-600 uppercase tracking-wider font-bold mt-1">${sandboxState.title || 'Bidang Profesi'}</p>
-                        </div>
-                        <div class="w-12 h-12 rounded-full overflow-hidden bg-slate-100 shrink-0">
-                            <img src="${avatarPlaceholder}" class="w-full h-full object-cover" alt="avatar">
-                        </div>
+                <div class="min-h-full bg-white text-slate-800 flex flex-col font-sans p-5 select-none">
+                    <div class="border-b border-slate-100 pb-4 mb-4 shrink-0">
+                        <h1 class="text-base font-extrabold text-slate-900 tracking-tight">${sandboxState.name}</h1>
+                        <p class="text-[10px] text-brand-600 uppercase tracking-wider font-bold mt-0.5">${sandboxState.title}</p>
                     </div>
-                    <div class="space-y-6 text-xs sm:text-sm">
-                        <div>
-                            <p class="text-slate-600 leading-relaxed font-light text-sm">${sandboxState.bio || 'Tentang saya...'}</p>
+                    <div class="space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-[9px] font-bold text-slate-400 uppercase tracking-wider block">Profil Profesional</span>
+                            <p class="text-xs text-slate-600 leading-relaxed font-light">${sandboxState.bio}</p>
                         </div>
-                        
-                        <div class="space-y-2">
-                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">KEAHLIAN TERSTRUKTUR</span>
-                            <div class="flex flex-wrap gap-1.5">
-                                ${sandboxState.skill1 ? `<span class="bg-slate-50 border border-slate-100 text-slate-700 px-3 py-1 rounded-xl text-xs font-semibold">${sandboxState.skill1}</span>` : ''}
-                                ${sandboxState.skill2 ? `<span class="bg-slate-50 border border-slate-100 text-slate-700 px-3 py-1 rounded-xl text-xs font-semibold">${sandboxState.skill2}</span>` : ''}
-                                ${sandboxState.skill3 ? `<span class="bg-slate-50 border border-slate-100 text-slate-700 px-3 py-1 rounded-xl text-xs font-semibold">${sandboxState.skill3}</span>` : ''}
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-slate-50">
-                            <div>
-                                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-2">PENGALAMAN KERJA</span>
-                                <div class="space-y-2 text-xs">
-                                    <h4 class="font-bold text-slate-900">Manajer Proyek Teknologi</h4>
-                                    <p class="text-slate-500">PT Global Solution (2024 - Sekarang)</p>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-2">PENDIDIKAN</span>
-                                <div class="space-y-2 text-xs">
-                                    <h4 class="font-bold text-slate-900">S1 Administrasi Bisnis</h4>
-                                    <p class="text-slate-500">Institut Teknologi &amp; Bisnis (Lulus 2023)</p>
-                                </div>
+                        <div class="space-y-1.5">
+                            <span class="text-[9px] font-bold text-slate-400 uppercase tracking-wider block">Kompetensi Utama</span>
+                            <div class="flex flex-wrap gap-1">
+                                ${sandboxState.skill1 ? `<span class="bg-slate-50 border border-slate-100 text-slate-700 px-2.5 py-0.5 rounded text-[10px] font-semibold">${sandboxState.skill1}</span>` : ''}
+                                ${sandboxState.skill2 ? `<span class="bg-slate-50 border border-slate-100 text-slate-700 px-2.5 py-0.5 rounded text-[10px] font-semibold">${sandboxState.skill2}</span>` : ''}
+                                ${sandboxState.skill3 ? `<span class="bg-slate-50 border border-slate-100 text-slate-700 px-2.5 py-0.5 rounded text-[10px] font-semibold">${sandboxState.skill3}</span>` : ''}
                             </div>
                         </div>
                     </div>
-                </div>
-            `;
+                </div>`;
         }
 
         // Tembakkan ke viewport simulator kecil
         simulatedViewport.innerHTML = compiledHtml;
         
-        // Tembakkan juga ke container halaman penuh
-        fullPreviewContainer.innerHTML = `
-            <div class="max-w-4xl mx-auto my-10 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
-                ${compiledHtml}
-            </div>
-        `;
+        // SINKRONISASI WARNA LATAR SIMULATOR viewport secara dinamis agar mulus tanpa batas putih!
+        const bgColors = {
+            tech: "#0a0f1d",
+            creative: "#fbfaf7",
+            corporate: "#ffffff"
+        };
+        simulatedViewport.style.backgroundColor = bgColors[sandboxState.activeTemplate] || "#ffffff";
     }
 
-    // Fungsi Mengirimkan Pesanan otomatis ke WhatsApp
-    function sendOrder() {
-        const textMsg = `Halo *HaloPortoku*! 🚀
-
-Saya ingin memesan jasa pembuatan website CV dengan draf sebagai berikut:
-
-*📦 Pilihan Template:* ${sandboxState.activeTemplate.toUpperCase()}
-*👤 Nama Lengkap:* ${sandboxState.name}
-*💼 Gelar Profesi:* ${sandboxState.title}
-*📝 Bio Singkat:* ${sandboxState.bio}
-
-*🛠️ Keahlian Utama:*
-1. ${sandboxState.skill1 || '-'}
-2. ${sandboxState.skill2 || '-'}
-3. ${sandboxState.skill3 || '-'}
-
-Mohon informasi langkah selanjutnya untuk proses pekerjaan. Terima kasih!`;
-
-        const encodedText = encodeURIComponent(textMsg);
-        window.open(`https://wa.me/6282387385055?text=${encodedText}`, '_blank');
+    // Fungsi Render Viewport Sesuai Kondisi Default
+    function renderViewport() {
+        renderSimulation();
     }
 
-    // Detail langkah cara kerja interaktif
-    const workflowSteps = {
-        1: {
-            badge: "Langkah 1",
-            title: "Isi Data & Konsultasi Karir",
-            desc: "Setelah Anda mengonfirmasi pesanan melalui WhatsApp, kami akan mengirimkan tautan Google Form yang mudah diisi. Anda cukup memasukkan biodata, riwayat pendidikan, serta foto profesional terbaik. Tidak perlu mengerti coding, semua kami yang urus!",
-            icon: "fa-file-invoice"
-        },
-        2: {
-            badge: "Langkah 2",
-            title: "Pilih Desain Ideal Sesuai Karakter",
-            desc: "Pilih 1 dari 3 pilihan templat andalan kami yang responsif. Mau gaya monokromatik ala Developer (Tech), estetika artistik minimalis (Artisan), atau profesional korporat formal (Executive). Semuanya dijamin rapi saat diakses melalui HP.",
-            icon: "fa-palette"
-        },
-        3: {
-            badge: "Langkah 3",
-            title: "Rakit Kode & Optimasi Akses",
-            desc: "Kami merakit kode website CV Anda menggunakan standar teknologi web modern (HTML, Tailwind CSS). Kami melakukan kompresi aset gambar serta optimasi performa server agar website CV Anda memiliki nilai sempurna (100) saat di-audit oleh rekruter.",
-            icon: "fa-laptop-code"
-        },
-        4: {
-            badge: "Langkah 4",
-            title: "Sertifikasi SSL & Rilis Link Online",
-            desc: "Website CV Anda resmi meluncur secara publik di GitHub Pages secara gratis s/d 5 tahun tanpa harus menyewa hosting bulanan! Kami membantu memastikan enkripsi keamanan SSL gratis diaktifkan agar aman diakses.",
-            icon: "fa-globe"
-        }
-    };
-
-    function selectWorkflowStep(stepNum) {
-        // Reset warna semua kartu
-        document.querySelectorAll('.workflow-card').forEach(card => {
-            card.className = "workflow-card p-6 rounded-2xl border text-left transition-all duration-300 border-slate-200 hover:border-brand-300";
-            card.querySelector('div').className = "w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center font-black mb-4";
-        });
-
-        // Set kartu yang dipilih menjadi aktif
-        const activeCard = document.getElementById(`step-card-${stepNum}`);
-        activeCard.className = "workflow-card p-6 rounded-2xl border text-left transition-all duration-300 bg-brand-50 border-brand-500 shadow-md shadow-brand-500/5";
-        activeCard.querySelector('div').className = "w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-black mb-4";
-
-        // Update kotak detail penjelasan
-        const stepData = workflowSteps[stepNum];
-        document.getElementById('step-detail-icon').innerHTML = `<i class="fa-solid ${stepData.icon}"></i>`;
-        document.getElementById('step-detail-badge').innerText = stepData.badge;
-        document.getElementById('step-detail-title').innerText = stepData.title;
-        document.getElementById('step-detail-desc').innerText = stepData.desc;
-    }
-
-    // Kalkulator harga dinamis secara real-time
+    // Kalkulator harga dinamis secara real-time (Hanya mengalkulasi add-ons tersisa)
     function updateTotalPrice() {
         const expressChecked = document.getElementById('addon-express').checked;
         const contactChecked = document.getElementById('addon-contact').checked;
         const bilingualChecked = document.getElementById('addon-bilingual').checked;
-        const seoChecked = document.getElementById('addon-seo').checked;
 
         let additionalCost = 0;
         if (expressChecked) additionalCost += addonPrices.express;
         if (contactChecked) additionalCost += addonPrices.contact;
         if (bilingualChecked) additionalCost += addonPrices.bilingual;
-        if (seoChecked) additionalCost += addonPrices.seo;
 
         const totalHarga = basePrice + additionalCost;
 
         document.getElementById('price-main').innerText = `Rp ${totalHarga.toLocaleString('id-ID')}`;
     }
 
-    // Pesan paket dengan add-ons yang dipilih
+    // Pesan paket dengan add-ons yang dipilih (Tanpa SEO)
     function orderPackage() {
         const expressChecked = document.getElementById('addon-express').checked;
         const contactChecked = document.getElementById('addon-contact').checked;
         const bilingualChecked = document.getElementById('addon-bilingual').checked;
-        const seoChecked = document.getElementById('addon-seo').checked;
 
         let selectedAddonsList = [];
         let additionalCost = 0;
@@ -1243,10 +1365,6 @@ Mohon informasi langkah selanjutnya untuk proses pekerjaan. Terima kasih!`;
         if (bilingualChecked) {
             selectedAddonsList.push("Dukungan Fitur Bilingual (Dua Bahasa)");
             additionalCost += addonPrices.bilingual;
-        }
-        if (seoChecked) {
-            selectedAddonsList.push("Optimasi Google SEO Profesional");
-            additionalCost += addonPrices.seo;
         }
 
         const totalPrice = basePrice + additionalCost;
@@ -1277,7 +1395,7 @@ Mohon panduan untuk langkah pembayaran serta pengisian data lengkap selanjutnya.
         document.querySelectorAll('.portfolio-filter-btn').forEach(btn => {
             btn.className = "portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50";
         });
-        document.getElementById(`btn-filter-${category}`).className = "portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-brand-600 text-white shadow-md";
+        document.getElementById(`btn-filter-${category}`).className = "portfolio-filter-btn px-5 py-2 text-xs font-bold rounded-xl transition-all bg-brand-600 text-white shadow-md font-sans";
 
         document.querySelectorAll('.portfolio-item-card').forEach(card => {
             const cardCat = card.getAttribute('data-category');
@@ -1352,5 +1470,15 @@ Mohon panduan untuk langkah pembayaran serta pengisian data lengkap selanjutnya.
     };
 </script>
 
-</body>
-</html>
+<!-- CSS Kustom Tambahan -->
+<style>
+    /* Styling scrollbar mini untuk navigasi Langkah 1 */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+    }
+</style>

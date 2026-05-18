@@ -7,7 +7,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amelia Kirana - UI/UX Designer & Content Creator</title>
+    <title>Amelia Kirana - UI/UX Designer &amp; Content Creator</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,15 +55,28 @@
 
     <!-- ==============================================================================
          NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
-         Ditambahkan agar calon klien mudah berpindah contoh demo portofolio
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
          ============================================================================== -->
-    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#faf8f5]/95 backdrop-blur-md border border-stone-200/80 px-4 py-3 rounded-2xl shadow-2xl flex items-center space-x-3.5 text-xs w-[90%] max-w-md md:w-auto">
-        <span class="text-stone-500 font-sans hidden sm:inline"><i class="fa-solid fa-palette text-orange-600 mr-1"></i> Gaya Desain:</span>
-        <div class="flex space-x-1 bg-stone-100 p-1 rounded-xl border border-stone-200/60 w-full sm:w-auto justify-between">
-            <a href="demo-developer.html" class="px-3 py-1.5 rounded-lg text-stone-500 hover:text-stone-800 text-center flex-1 sm:flex-initial">Developer</a>
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#faf8f5]/95 backdrop-blur-md border border-stone-200/80 px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-stone-500 font-sans shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-orange-600 mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-stone-100 p-1.5 rounded-xl border border-stone-200/60 font-sans w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Dev</a>
             <!-- Aktif pada halaman ini -->
-            <a href="demo-artisan.html" class="px-3 py-1.5 rounded-lg bg-stone-900 text-stone-50 font-bold border border-stone-800 text-center flex-1 sm:flex-initial">Artisan</a>
-            <a href="demo-executive.html" class="px-3 py-1.5 rounded-lg text-stone-500 hover:text-stone-800 text-center flex-1 sm:flex-initial">Executive</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded bg-stone-900 text-stone-50 font-bold border border-stone-800 text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Swiss</a>
         </div>
     </div>
 
@@ -77,7 +90,7 @@
                 <a href="#about" class="text-stone-500 hover:text-stone-900 transition-colors">profil</a>
                 <a href="#gallery" class="text-stone-500 hover:text-stone-900 transition-colors">karya</a>
                 <a href="#specialty" class="text-stone-500 hover:text-stone-900 transition-colors">spesialisasi</a>
-                <a href="https://wa.me/6281234567890" target="_blank" class="px-2.5 py-1 sm:px-4 sm:py-2 rounded-full bg-stone-900 text-white hover:bg-stone-800 transition-all">Kontak</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-2.5 py-1 sm:px-4 sm:py-2 rounded-full bg-stone-900 text-white hover:bg-stone-800 transition-all">Kontak</a>
             </nav>
         </div>
     </header>
@@ -89,7 +102,7 @@
         <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
             <!-- Avatar Tengah-Atas di mobile, Kiri di desktop -->
             <div class="md:col-span-4 flex justify-center order-1">
-                <div class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-full md:h-auto md:aspect-square max-w-[280px] rounded-[2.5rem] overflow-hidden bg-stone-100 border border-stone-200/80 p-1.5 shadow-xl">
+                <div class="relative w-40 h-40 sm:w-48 sm:h-44 md:w-full md:h-auto md:aspect-square max-w-[280px] rounded-[2.5rem] overflow-hidden bg-stone-100 border border-stone-200/80 p-1.5 shadow-xl">
                     <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded-[2.2rem]" alt="Avatar Amelia">
                 </div>
             </div>
@@ -115,7 +128,7 @@
                     <a href="https://dribbble.com" target="_blank" class="hover:text-pink-600 transition-colors text-xl" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
                     <a href="https://instagram.com" target="_blank" class="hover:text-rose-600 transition-colors text-xl" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="mailto:amelia@email.com" class="hover:text-amber-600 transition-colors text-xl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-emerald-600 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="hover:text-emerald-600 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </section>
@@ -154,10 +167,10 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-                <!-- Karya 1 -->
+                <!-- Karya 1 (Tautan gambar Unsplash diganti dengan ilustrasi UI/UX Mobile App tepercaya) -->
                 <div class="group space-y-3">
                     <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-stone-100 border border-stone-200/60 shadow-sm relative">
-                        <img src="https://images.unsplash.com/photo-1541462608141-2f68c48a4039?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="E-Commerce App">
+                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Nusantara Craft - E-Commerce App">
                     </div>
                     <div class="px-1 flex justify-between items-start gap-4">
                         <div>

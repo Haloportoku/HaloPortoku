@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rian "Viper" Wijaya - Game Developer &amp; Cyber Security Enthusiast</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Share Tech Mono"', 'monospace'],
+                        display: ['"Orbitron"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom neon cyber scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #05050a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff007f;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00f0ff;
+        }
+
+        /* Neon Glow Effects */
+        .neon-border-cyan {
+            border: 2px solid #00f0ff;
+            box-shadow: 0 0 10px #00f0ff;
+        }
+        .neon-border-pink {
+            border: 2px solid #ff007f;
+            box-shadow: 0 0 10px #ff007f;
+        }
+        .neon-text-cyan {
+            color: #00f0ff;
+            text-shadow: 0 0 5px #00f0ff;
+        }
+        .neon-text-pink {
+            color: #ff007f;
+            text-shadow: 0 0 5px #ff007f;
+        }
+    </style>
+</head>
+<body class="bg-[#05050a] text-[#8e9bb0] font-sans min-h-screen selection:bg-[#ff007f]/30 selection:text-white pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#070714]/95 backdrop-blur-md border border-cyan-500/30 px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-cyan-400 font-display font-bold shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-cyan-400 mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-black p-1.5 rounded-xl border border-cyan-500/20 font-display font-bold w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Mint</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded bg-[#ff007f] text-white font-bold border border-[#ff007f] text-center shrink-0 shadow-md shadow-pink-500/30">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-[#8e9bb0] hover:text-cyan-400 text-center shrink-0">Swiss</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-[#05050a]/85 backdrop-blur-md border-b-2 border-cyan-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-display text-sm sm:text-lg text-white font-bold tracking-tight truncate mr-2">
+                ⚡ rian.<span class="text-[#ff007f]">viper</span>
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-bold tracking-wide text-cyan-400">
+                <a href="#about" class="hover:text-white transition-colors">// profil</a>
+                <a href="#projects" class="hover:text-white transition-colors">// eksperimen_karya</a>
+                <a href="#skills" class="hover:text-white transition-colors">// sistem_senjata</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-3.5 py-1.5 bg-transparent border border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 transition-all rounded-md font-display font-bold">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+            <!-- Profil Singkat Kiri -->
+            <div class="md:col-span-8 space-y-6 text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center space-x-2 bg-[#ff007f]/10 text-[#ff007f] border border-[#ff007f]/30 px-3.5 py-1.5 rounded-md text-[10px] sm:text-[11px] font-bold">
+                    <span class="flex h-1.5 w-1.5 rounded-full bg-[#ff007f] animate-ping"></span>
+                    <span>ONLINE // TRANSMISI STATUS: AKTIF</span>
+                </div>
+                <div class="space-y-3">
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight font-display uppercase">
+                        Rian "Viper" Wijaya
+                    </h1>
+                    <p class="text-xs sm:text-sm font-sans font-bold text-cyan-400 uppercase tracking-[0.25em]">
+                        &gt;&gt; Game Developer &amp; Cyber Security Enthusiast
+                    </p>
+                </div>
+                <p class="text-[#8e9bb0] text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-medium">
+                    Merakit dunia digital virtual interaktif, meretas batas-batas sistem server, serta menguji kerentanan jaringan cyber. Berfokus pada pengembangan game mekanik tinggi menggunakan Unity, serta audit perlindungan data digital korporat.
+                </p>
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center justify-center md:justify-start space-x-5 pt-1 text-slate-400">
+                    <a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-slate-900 border border-cyan-500/20 rounded hover:border-cyan-400 hover:text-cyan-400 flex items-center justify-center text-xl transition-all" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:rian.viper@email.com" class="w-10 h-10 bg-slate-900 border border-cyan-500/20 rounded hover:border-cyan-400 hover:text-cyan-400 flex items-center justify-center text-xl transition-all" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-slate-900 border border-cyan-500/20 rounded hover:border-cyan-400 hover:text-cyan-400 flex items-center justify-center text-xl transition-all" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="w-10 h-10 bg-slate-900 border border-cyan-500/20 rounded hover:border-cyan-400 hover:text-cyan-400 flex items-center justify-center text-xl transition-all" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Avatar Kanan -->
+            <div class="md:col-span-4 flex justify-center order-1 md:order-2">
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 md:w-full md:h-auto md:aspect-square max-w-[260px] bg-[#1a1a2e] border-2 border-[#ff007f] p-1.5 rounded-lg shadow-xl shadow-pink-500/10">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded grayscale hover:grayscale-0 contrast-125 transition-all" alt="Avatar Rian">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cyberpunk Console Banner -->
+        <section class="bg-[#0b0c16] border-2 border-cyan-500/20 p-6 sm:p-10 rounded-lg relative overflow-hidden">
+            <div class="absolute right-0 top-0 w-32 h-32 bg-[#ff007f]/5 rounded-full blur-3xl"></div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start relative z-10">
+                <div class="md:col-span-4 space-y-1 font-display">
+                    <span class="text-[10px] font-bold text-[#ff007f] uppercase tracking-[0.2em] block">// LOG_KRONOLOGI</span>
+                    <h2 class="text-xl font-bold text-white uppercase tracking-wider">Arsip Pendidikan &amp; Karir</h2>
+                </div>
+                <div class="md:col-span-8 space-y-6 text-xs sm:text-sm font-medium">
+                    <div class="border-b border-cyan-500/10 pb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-white text-xs sm:text-sm font-display">Senior Game Developer // VR Lead</h4>
+                            <span class="text-[#ff007f] bg-[#ff007f]/5 border border-[#ff007f]/20 rounded px-2 py-0.5 text-[9px] sm:text-xs font-display">// NEON SHADOWS STUDIO (2024 - Sekarang)</span>
+                        </div>
+                        <p class="text-[#8e9bb0] font-sans font-light mt-1.5 leading-relaxed text-xs">Mengembangkan arsitektur game mekanika 3D berbasis realitas virtual (VR), mengoptimasi rendering grafis game real-time, serta memimpin tim developer internal.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-white text-xs sm:text-sm font-display">S1 Teknik Elektro // Sub-konsentrasi Robotika</h4>
+                            <span class="text-[#ff007f] bg-[#ff007f]/5 border border-[#ff007f]/20 rounded px-2 py-0.5 text-[9px] sm:text-xs font-display">// UNIVERSITAS INDONESIA (Lulus 2023)</span>
+                        </div>
+                        <p class="text-[#8e9bb0] font-sans font-light mt-1.5 leading-relaxed text-xs">Eksplorasi sensor pengendali robot pintar berbasis IoT, pemrograman mikrokontroler, serta audit dasar celah keamanan protokol internet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Curated Gallery -->
+        <section id="projects" class="space-y-8 font-display">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-cyan-400 uppercase tracking-[0.2em] block">// EKSPERIMEN_SISTEM_KARYA</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white uppercase tracking-wider">Aset Portofolio</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Proyek 1 -->
+                <div class="bg-[#0b0c16]/50 border-2 border-cyan-500/10 p-5 rounded-lg space-y-4 hover:border-cyan-400 transition-all duration-300">
+                    <div class="aspect-[4/3] rounded overflow-hidden bg-slate-900 border-2 border-cyan-500/10">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-115 grayscale hover:grayscale-0 transition-all duration-500" alt="Cyberpunk Game">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-white tracking-wide">Rogue-City: Retro Sci-Fi Game</h3>
+                            <p class="text-xs text-[#8e9bb0] font-sans font-light mt-1">Mengonsep prototipe game RPG petualangan 3D bertema masa depan masa cyberpunk menggunakan Unity Engine dan C# scripting.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border-2 border-cyan-400 text-cyan-400 rounded flex items-center justify-center shadow-lg shadow-cyan-400/10 hover:bg-cyan-400/10 transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="bg-[#0b0c16]/50 border-2 border-cyan-500/10 p-5 rounded-lg space-y-4 hover:border-pink-500 transition-all duration-300">
+                    <div class="aspect-[4/3] rounded overflow-hidden bg-slate-900 border-2 border-cyan-500/10">
+                        <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-115 grayscale hover:grayscale-0 transition-all duration-500" alt="Cyber Audit">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-white tracking-wide">Securify: Network Scanner Audit</h3>
+                            <p class="text-xs text-[#8e9bb0] font-sans font-light mt-1">Mengembangkan program skrip Python pemindaian kerentanan jaringan, memantau port terbuka, dan mitigasi intrusi server secara otomatis.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border-2 border-[#ff007f] text-[#ff007f] rounded flex items-center justify-center shadow-lg shadow-pink-400/10 hover:bg-[#ff007f]/10 transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Matrix -->
+        <section id="skills" class="space-y-6 font-display">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-[#ff007f] uppercase tracking-[0.2em] block">// SISTEM_SENJATA_KEAHLIAN</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white uppercase tracking-wider">Kemampuan Tempur</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 font-sans">
+                <!-- Skill 1 -->
+                <div class="bg-[#0b0c16] border-2 border-cyan-500/10 p-6 rounded-lg space-y-4 hover:border-cyan-400 transition-all">
+                    <div class="w-12 h-12 bg-cyan-950/20 border border-cyan-500/30 text-cyan-400 rounded flex items-center justify-center text-lg"><i class="fa-solid fa-gamepad"></i></div>
+                    <h3 class="text-sm font-bold text-white uppercase tracking-wide font-display">Unity &amp; VR Architecture</h3>
+                    <p class="text-xs text-[#8e9bb0] leading-relaxed">Merakit sistem mekanis game 3D, optimalisasi shader, integrasi fisika objek virtual, serta pengembangan VR.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-[#0b0c16] border-2 border-cyan-500/10 p-6 rounded-lg space-y-4 hover:border-pink-500 transition-all">
+                    <div class="w-12 h-12 bg-[#ff007f]/10 border border-[#ff007f]/30 text-[#ff007f] rounded flex items-center justify-center text-lg"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="text-sm font-bold text-white uppercase tracking-wide font-display">Penetration Testing</h3>
+                    <p class="text-xs text-[#8e9bb0] leading-relaxed">Menemukan celah kerentanan web, analisis log server, bypass proteksi keamanan dasar, dan eksploitasi terstruktur.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-[#0b0c16] border-2 border-cyan-500/10 p-6 rounded-lg space-y-4 hover:border-cyan-400 transition-all">
+                    <div class="w-12 h-12 bg-cyan-950/20 border border-cyan-500/30 text-cyan-400 rounded flex items-center justify-center text-lg"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-sm font-bold text-white uppercase tracking-wide font-display">Python &amp; C# Scripting</h3>
+                    <p class="text-xs text-[#8e9bb0] leading-relaxed">Menyusun program otomasi skrip Python untuk cyber security serta penulisan kode terstruktur C# di Unity Engine.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t border-cyan-500/20 py-10 text-center text-xs text-[#8e9bb0]/50 font-display">
+        <p>© 2026 Rian Wijaya. All Rights Reserved.</p>
+        <p class="mt-1">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Kirana, S.Ars - Minimalist Architect &amp; Space Designer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar gaya elegan Nordic (sangat tipis dan halus) */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fafaf9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d6d3d1;
+            border-radius: 2px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a29e;
+        }
+    </style>
+</head>
+<body class="bg-[#fafaf9] text-[#1c1917] font-sans min-h-screen selection:bg-[#cca762]/20 selection:text-[#1c1917] pb-28">
+
+    <!-- ==============================================================================
+         NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
+         ============================================================================== -->
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/95 backdrop-blur-xl border border-stone-200 px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-stone-500 font-sans font-bold shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-stone-400 mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-stone-100 p-1.5 rounded-xl border border-stone-200/50 font-sans font-bold w-full text-[10px] sm:text-xs">
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Aurora</a>
+            <!-- Aktif pada halaman ini -->
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded bg-[#1c1917] text-[#fafaf9] font-bold border border-stone-200 text-center shrink-0 shadow-sm">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-stone-500 hover:text-stone-900 text-center shrink-0">Swiss</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Mini -->
+    <header class="sticky top-0 z-40 bg-[#fafaf9]/85 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-sans text-xs sm:text-sm text-[#1c1917] font-bold tracking-[0.2em] uppercase truncate mr-2">
+                Lukas <span class="font-light text-stone-500">Kirana</span>
+            </a>
+            <nav class="flex items-center space-x-4 sm:space-x-8 text-xs font-semibold tracking-wide">
+                <a href="#about" class="text-stone-500 hover:text-black transition-colors">profil</a>
+                <a href="#curation" class="text-stone-500 hover:text-black transition-colors">kurasi_karya</a>
+                <a href="#skills" class="text-stone-500 hover:text-black transition-colors">keahlian</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-4 py-2 bg-[#1c1917] text-white hover:bg-stone-800 transition-all rounded-md">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 space-y-16 sm:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+            <!-- Profil Singkat Kiri -->
+            <div class="md:col-span-8 space-y-6 text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center space-x-2 bg-stone-100 border border-stone-200 px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-semibold text-stone-600">
+                    <span class="flex h-1.5 w-1.5 rounded-full bg-stone-400"></span>
+                    <span>Studio Praktek Mandiri // Jakarta - Bali</span>
+                </div>
+                <div class="space-y-3">
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-normal text-[#1c1917] tracking-tight leading-tight font-serif italic">
+                        Lukas Kirana, S.Ars
+                    </h1>
+                    <p class="text-xs sm:text-sm font-sans font-bold text-stone-400 uppercase tracking-[0.2em]">
+                        &gt; Minimalist Architect &amp; Space Designer
+                    </p>
+                </div>
+                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-light">
+                    Mengeksplorasi hubungan antara ruang, cahaya alami, dan material mentah secara fungsional. Berdedikasi penuh untuk menciptakan karya arsitektur residensial yang tenang, efisien secara spasial, serta berkelanjutan.
+                </p>
+                <!-- Tombol Sosial Media -->
+                <div class="flex items-center justify-center md:justify-start space-x-5 pt-1 text-stone-400">
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-black transition-colors text-xl" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:lukas@email.com" class="hover:text-black transition-colors text-xl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-black transition-colors text-xl" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="hover:text-black transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Avatar Kanan -->
+            <div class="md:col-span-4 flex justify-center order-1 md:order-2">
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 md:w-full md:h-auto md:aspect-square max-w-[260px] p-2 bg-white border border-stone-200 rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover rounded-xl grayscale contrast-110" alt="Avatar Lukas">
+                </div>
+            </div>
+        </section>
+
+        <!-- Chronology / Manifesto Section -->
+        <section class="border border-stone-200 bg-white rounded-[2rem] p-6 sm:p-10 shadow-sm relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+                <div class="md:col-span-4 space-y-1 font-serif">
+                    <span class="text-[9px] font-sans font-bold text-stone-400 uppercase tracking-[0.2em] block">// LOG_KRONOLOGI</span>
+                    <h2 class="text-xl font-bold text-stone-900 italic">Eksplorasi Praktis</h2>
+                </div>
+                <div class="md:col-span-8 space-y-6 text-xs sm:text-sm font-medium text-stone-600">
+                    <div class="border-b border-stone-100 pb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-stone-900 text-xs sm:text-sm font-sans">Principal Space Designer</h4>
+                            <span class="text-stone-500 font-sans text-[10px] sm:text-xs">Satu Garis Studio, Jakarta (2024 - Sekarang)</span>
+                        </div>
+                        <p class="text-stone-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Mengonsep desain tata ruang rumah minimalis, pengawasan estetika interior, serta kurasi pemilihan material alami ramah lingkungan.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-4">
+                            <h4 class="font-bold text-stone-900 text-xs sm:text-sm font-sans">S1 Teknik Arsitektur</h4>
+                            <span class="text-stone-500 font-sans text-[10px] sm:text-xs">Universitas Indonesia (Lulus 2023)</span>
+                        </div>
+                        <p class="text-stone-500 font-sans font-light mt-1.5 leading-relaxed text-xs">Penelitian tugas akhir bertema perancangan mikro-apartemen hemat ruang perkotaan dengan pemanfaatan ventilasi silang alami.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Curated Gallery -->
+        <section id="curation" class="space-y-8 font-sans">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-stone-400 uppercase tracking-[0.2em] block">// REKAYASA_TATA_RUANG</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1c1917] tracking-tight">Karya Terpilih</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Proyek 1 -->
+                <div class="bg-white border border-stone-200 p-5 rounded-3xl space-y-4">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-stone-100 border border-stone-200">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-105 grayscale hover:grayscale-0 transition-all duration-500" alt="Residensial Minimalis">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-[#1c1917] font-serif italic">The Silent House - Residensial</h3>
+                            <p class="text-xs text-stone-500 font-sans font-light mt-1">Konsep hunian modern tropis dengan integrasi taman dalam ruangan, pencahayaan alami zenith, serta beton ekspos.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border border-stone-200 text-stone-900 rounded-full flex items-center justify-center hover:bg-stone-900 hover:text-white transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="bg-white border border-stone-200 p-5 rounded-3xl space-y-4">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-stone-100 border border-stone-200">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover contrast-105 grayscale hover:grayscale-0 transition-all duration-500" alt="Desain Interior">
+                    </div>
+                    <div class="flex justify-between items-start gap-4 pt-1">
+                        <div>
+                            <h3 class="text-base font-bold text-[#1c1917] font-serif italic">Kopi &amp; Kontemplasi - Interior Kedai</h3>
+                            <p class="text-xs text-stone-500 font-sans font-light mt-1">Desain tata ruang kedai kopi minimalis di ruang sempit menggunakan panel kayu jati daur ulang dan sistem meja modular.</p>
+                        </div>
+                        <a href="#" class="w-10 h-10 border border-stone-200 text-stone-900 rounded-full flex items-center justify-center hover:bg-stone-900 hover:text-white transition-all shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Matrix -->
+        <section id="skills" class="space-y-6">
+            <div class="space-y-1.5 text-center md:text-left">
+                <span class="text-[10px] font-bold text-stone-400 uppercase tracking-[0.2em] block">// PILAR_KEAHLIAN</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1c1917]">Spesialisasi Desain</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 font-sans">
+                <!-- Skill 1 -->
+                <div class="bg-white border border-stone-200 p-6 rounded-3xl space-y-4 hover:shadow-sm transition-all">
+                    <div class="w-12 h-12 bg-[#fafaf9] border border-stone-200 text-[#1c1917] rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3 class="text-sm font-bold text-[#1c1917] uppercase tracking-wide">Architectural Concept</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">Merancang sketsa konsep tata bangunan, pemodelan struktur maket, serta analisis fungsi tapak residensial.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-white border border-stone-200 p-6 rounded-3xl space-y-4 hover:shadow-sm transition-all">
+                    <div class="w-12 h-12 bg-[#fafaf9] border border-stone-200 text-[#1c1917] rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3 class="text-sm font-bold text-[#1c1917] uppercase tracking-wide">Lighting &amp; Materiality</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">Memformulasikan simulasi bayangan sinar matahari harian, kurasi material kayu, batu alam, serta beton ekspos.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-white border border-stone-200 p-6 rounded-3xl space-y-4 hover:shadow-sm transition-all">
+                    <div class="w-12 h-12 bg-[#fafaf9] border border-stone-200 text-[#1c1917] rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-house"></i></div>
+                    <h3 class="text-sm font-bold text-[#1c1917] uppercase tracking-wide">Interior Layouts</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">Mengonfigurasi skema interior modular, pemaksimalan ruang sempit, serta desain furnitur kustom terintegrasi.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer CV -->
+    <footer class="border-t border-stone-200 py-10 text-center text-xs text-stone-400">
+        <p>© 2026 Lukas Kirana. All Rights Reserved.</p>
+        <p class="mt-1">Dibuat menggunakan teknologi HaloPortoku.</p>
+    </footer>
+
+</body>
+</html>

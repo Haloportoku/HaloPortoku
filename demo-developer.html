@@ -7,7 +7,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogi Pratama - Cyber Security & Cloud Engineer</title>
+    <title>Yogi Pratama - Cyber Security &amp; Cloud Engineer</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,6 +38,7 @@
         /* Custom scrollbar gaya developer */
         ::-webkit-scrollbar {
             width: 6px;
+            height: 6px;
         }
         ::-webkit-scrollbar-track {
             background: #050811;
@@ -55,16 +56,28 @@
 
     <!-- ==============================================================================
          NARA-KONTROL: TEMA SWITCHER MELAYANG (Floating Theme Switcher)
-         Ditambahkan agar calon klien mudah berpindah contoh demo portofolio
+         Rancangan Baru: max-w-5xl (Lebih Panjang) & Flex-Wrap Pintar.
+         - Layar Desktop: Tampil 1 baris utuh sejajar secara instan (Bebas Scroll!).
+         - Layar HP: Otomatis melipat (wrap) menjadi baris ganda yang sangat rapi.
          ============================================================================== -->
-    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#090d16]/95 backdrop-blur-md border border-slate-800/80 px-4 py-3 rounded-2xl shadow-2xl flex items-center space-x-3.5 text-xs w-[90%] max-w-md md:w-auto">
-        <span class="text-slate-400 font-mono hidden sm:inline"><i class="fa-solid fa-palette text-teal-400 mr-1"></i> Gaya Desain:</span>
-        <div class="flex space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-900 font-mono w-full sm:w-auto justify-between">
+    <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#090d16]/95 backdrop-blur-md border border-slate-800/80 px-4 py-3 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center gap-2.5 w-[96%] max-w-5xl">
+        <span class="text-slate-400 font-mono shrink-0 hidden lg:inline">
+            <i class="fa-solid fa-palette text-teal-400 mr-1"></i> Desain:
+        </span>
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 bg-slate-950 p-1.5 rounded-xl border border-slate-900 font-mono w-full text-[10px] sm:text-xs">
             <!-- Aktif pada halaman ini -->
-            <a href="demo-developer.html" class="px-3 py-1.5 rounded-lg bg-teal-500/10 text-teal-400 font-bold border border-teal-500/20 text-center flex-1 sm:flex-initial">Developer</a>
-            <!-- Link ke témplat yang akan dibuat selanjutnya -->
-            <a href="demo-artisan.html" class="px-3 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 text-center flex-1 sm:flex-initial">Artisan</a>
-            <a href="demo-executive.html" class="px-3 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 text-center flex-1 sm:flex-initial">Executive</a>
+            <a href="demo-developer.html" class="px-2.5 py-1 rounded bg-teal-500/10 text-teal-400 font-bold border border-teal-500/25 text-center shrink-0">Dev</a>
+            <a href="demo-artisan.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Artisan</a>
+            <a href="demo-executive.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Executive</a>
+            <a href="demo-elegant.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Elegant</a>
+            <a href="demo-retro.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Retro</a>
+            <a href="demo-neomint.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Mint</a>
+            <a href="demo-cyberpunk.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Cyber</a>
+            <a href="demo-neumorphism.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Soft</a>
+            <a href="demo-aurora.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Aurora</a>
+            <a href="demo-nordic.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Nordic</a>
+            <a href="demo-clay.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Clay</a>
+            <a href="demo-swiss.html" class="px-2.5 py-1 rounded text-slate-500 hover:text-slate-200 text-center shrink-0">Swiss</a>
         </div>
     </div>
 
@@ -75,10 +88,10 @@
                 <span class="text-teal-400">yogi@</span>dev-system:~
             </a>
             <nav class="flex items-center space-x-3 sm:space-x-6 text-[10px] sm:text-xs font-mono shrink-0">
-                <a href="#about" class="hover:text-teal-400 transition-colors">// profil</a>
-                <a href="#projects" class="hover:text-teal-400 transition-colors">// proyek</a>
-                <a href="#skills" class="hover:text-teal-400 transition-colors">// keahlian</a>
-                <a href="https://wa.me/6281234567890" target="_blank" class="px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-lg bg-teal-500/10 text-teal-400 border border-teal-500/20 hover:bg-teal-500/20 transition-all">Kontak</a>
+                <a href="#about" class="hover:text-teal-400 transition-colors">/ profil</a>
+                <a href="#projects" class="hover:text-teal-400 transition-colors">/ proyek</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors">/ keahlian</a>
+                <a href="https://wa.me/6282387385055" target="_blank" class="px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-lg bg-teal-500/10 text-teal-400 border border-teal-500/20 hover:bg-teal-500/20 transition-all">Kontak</a>
             </nav>
         </div>
     </header>
@@ -102,15 +115,15 @@
                         &gt; Cyber Security Analyst &amp; Cloud Engineer
                     </p>
                 </div>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-light">
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto md:mx-0 font-light font-sans">
                     Berfokus pada keamanan infrastruktur jaringan, konfigurasi server Linux yang tangguh, serta pengelolaan sistem cloud modern untuk memastikan stabilitas dan keamanan aplikasi bisnis dalam skala besar.
                 </p>
                 <!-- Tombol Sosial Media -->
                 <div class="flex items-center justify-center md:justify-start space-x-5 pt-1 text-slate-400">
                     <a href="https://github.com" target="_blank" class="hover:text-white transition-colors text-xl" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" class="hover:text-teal-400 transition-colors text-xl" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-teal-400 transition-colors text-xl" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="mailto:yogi@email.com" class="hover:text-teal-400 transition-colors text-xl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-teal-400 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/6282387385055" target="_blank" class="hover:text-teal-400 transition-colors text-xl" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
             
@@ -165,7 +178,7 @@
                             <a href="https://github.com" target="_blank" class="text-slate-500 hover:text-white transition-colors" aria-label="GitHub Project Link"><i class="fa-brands fa-github text-sm"></i></a>
                         </div>
                         <h3 class="text-base font-bold text-white">WAF Custom Rule Configurator</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-light">Eksperimen konfigurasi kustom mitigasi serangan DDoS dan pemindaian SQL Injection menggunakan Cloudflare Ruleset Engine.</p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-light font-sans">Eksperimen konfigurasi kustom mitigasi serangan DDoS dan pemindaian SQL Injection menggunakan Cloudflare Ruleset Engine.</p>
                     </div>
                     <div class="flex flex-wrap gap-1.5 pt-2">
                         <span class="px-2.5 py-1 bg-slate-900 border border-slate-800 rounded-lg text-[9px] font-mono text-slate-400">Cloudflare</span>
@@ -181,7 +194,7 @@
                             <a href="https://github.com" target="_blank" class="text-slate-500 hover:text-white transition-colors" aria-label="GitHub Project Link"><i class="fa-brands fa-github text-sm"></i></a>
                         </div>
                         <h3 class="text-base font-bold text-white">Automated AWS Infrastructure</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-light">Otomatisasi perakitan arsitektur server aman (VPC, EC2, RDS) dengan menggunakan Terraform secara dinamis.</p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-light font-sans">Otomatisasi perakitan arsitektur server aman (VPC, EC2, RDS) dengan menggunakan Terraform secara dinamis.</p>
                     </div>
                     <div class="flex flex-wrap gap-1.5 pt-2">
                         <span class="px-2.5 py-1 bg-slate-900 border border-slate-800 rounded-lg text-[9px] font-mono text-slate-400">Terraform</span>
